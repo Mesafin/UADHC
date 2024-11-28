@@ -1,0 +1,56 @@
+/*=============================
+	06. Breadcrumb
+===============================*/
+.about-us-text-color{
+	color: white !important;
+}
+.breadcrumb-bg {
+	background-size: cover;
+	/* background-repeat: no-repeat; */
+	padding: 3% 0 105px 10%;
+	position: relative;
+	z-index: 1;
+	height: 400px !important;
+	background-position: top;
+}
+.breadcrumb-shape {
+	/* position: absolute;
+	left: 0;
+	bottom: 0; */
+	/* width: 877px;
+	height: 242px; */
+	/* height: 400px !important; */
+	/* z-index: -1; */
+
+}
+.breadcrumb-content .title {
+	margin-bottom: 20px;
+	/* color: var(--tg-white); */
+	/* color: var(--tg-red); */
+	font-weight: 500;
+	font-size: 46px;
+	line-height: 1;
+}
+.breadcrumb-content .breadcrumb {
+	margin-bottom: 0;
+}
+.breadcrumb-content .breadcrumb-item {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--tg-primary-color);
+	line-height: 1.2;
+}
+.breadcrumb-content .breadcrumb-item a {
+	color: var(--tg-white);
+}
+.breadcrumb-content .breadcrumb-item+.breadcrumb-item::before {
+	float: left;
+	padding-right: 10px;
+	color: var(--tg-white);
+	content: '-';
+	font-size: 16px;
+	font-weight: 700;
+}
+.breadcrumb-content .breadcrumb-item+.breadcrumb-item {
+	padding-left: 10px;
+}

@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+                
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.footer_back_color{
+  background-color: #3D4657 ;
+}
+
+
+  /* heart shape */
+  .heart-shape-two {
+    width: 500px;
+    height: 500px;
+    padding-left: 200px;
+    background-image: url('../public/heroImage.png');
+    background-size: cover;  /* Ensure the full image fits */
+    background-position: center; /* Center the image inside the shape */
+    clip-path: path('M250,50 C380,50 380,200 250,250 C120,200 120,50 250,50 Z'); /* Updated heart shape */
+  }
+
+  /*  */
+  .second-shape{
+    /* height: 500px; */
+    width: auto;
+    background-image: url('../public/svg/layered-waves.svg');
+    background-position: center;
+    background-size: cover;
+  }
+/*  */
+
+  .heart-shape {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-image: url('../public/heroImage.png');
+    background-size: cover;
+    background-position: center;
+    clip-path: path('M 250,50 C 380,50 380,200 250,250 C 120,200 120,50 250,50 Z');
+  }
+
+
+  .circle-shape {
+    width: 500px;
+    height: 500px;
+    background-image: url('../public/heroImage.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+
+ 
+  .star-shape {
+    width: 500px;
+    height: 500px;
+    background-image: url('../public/heroImage.png');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+
+
+  /* hero 2 */
+  /* Add this to your global styles or component styles */
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 600px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.slide img {
+  object-fit: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* spira shape */
+.spiral-shape {
+  width: 500px;
+  height: 500px;
+  background-image: url('../public//home//adventure.png');
+  background-size: cover;
+  background-position: center;
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+/* wave */
+.bottomSvg{
+  height: 500px;
+  width: auto;
+  background-image: url('../public/home/wave-btm.svg');
+  background-position: center;
+  background-size: cover;
+  background-color: #CEDAE3;
+  margin-bottom: -350px;
+  margin-top: -5px;
+}
+.topSvg{
+  margin-top: -300px;
+  margin-bottom: -5px;
+  height: 500px;
+  width: auto;
+  background-image: url('../public/home/wave-top.svg');
+  background-position: center;
+  background-size: cover;
+}
+
+/* mobile responsive */
+@media (max-width: 768px) {
+  .slide {
+    height: 400px;
+
+  }
+ 
+}
+
+/* @media (max-width: 1027px) {
+.imageRatio{
+  height: 236px;
+}
+}
+@media (min-width: 1027px) {
+.imageRatio{
+  min-height: 136px;
+}
+}
+@media (min-width: 1535px) {
+.imageRatio{
+  min-height: 168px;
+}
+}
+@media (min-width: 1635px) {
+.imageRatio{
+  min-height: 168px;
+}
+} */
