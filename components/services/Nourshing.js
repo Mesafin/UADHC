@@ -5,7 +5,7 @@ const Nourishing = () => {
   return (  
     <>  
       {/* Section: Nourishing Your Body & Soul */}  
-      <section className="bg-gray-100 py-16 px-8  lg:py-20">  
+      <section className="bg-gray-100 py-16 px-6  lg:py-20">  
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 justify-center font-montserrat">  
           <div className="w-full md:w-3/5 md:pr-8">  
             <h2 className="text-4xl font-bold mb-4 border-l-8 border-uRed ps-4">Nourishing Your Body & Soul</h2>  

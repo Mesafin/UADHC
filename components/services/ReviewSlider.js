@@ -57,7 +57,7 @@ export default function ReviewSlider() {
   );
 
   return (
-    <div className="container mx-auto pb-12 px-6 font-montserrat relative">
+    <div className="container mx-auto pb-8 px-6 font-montserrat relative">
       {/* Navigation Controls */}
       <div className="flex justify-between items-center ">
         <button
@@ -78,13 +78,13 @@ export default function ReviewSlider() {
       </div>
 
       {/* Display Reviews */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-0 lg:px-10 ">
         {visibleReviews.map((review) => (
           <div
             key={review.id}
-            className="bg-blue-50 rounded-lg shadow-md px-12 pt-14 pb-8"
+            className="bg-blue-50 rounded-lg shadow-2xl px-12 pt-14 pb-8"
           >
-            <p className="text-gray-700 mb-4 md:mb-16 h-32 text-xl">{review.comment}</p>
+            <p className="text-gray-700 mb-16 h-32 text-xl">{review.comment}</p>
             <div className="flex items-center space-x-5">
               <div className="h-12 w-12 bg-gray-300 rounded-full"></div>
               <div>

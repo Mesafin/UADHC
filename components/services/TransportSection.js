@@ -3,7 +3,7 @@ import React from "react";
 
 const TransportSection = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between bg-white px-8 gap-8 my-16 md:my-24">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between bg-white px-8 gap-8 mt-6 mb-12 md:mt-10 md:mb-20">
       {/* left Image Section */}
       <div className="flex-shrink-0 w-full md:w-2/5">
         <img

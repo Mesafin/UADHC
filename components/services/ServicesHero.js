@@ -7,17 +7,7 @@ import serviceHeroImage from "../../public/services-hero.png"
 const ServicesHero = () => {
   return (
     <>
-       {/* Background Image with Opacity */}
-       {/* <div
-        style={{
-          backgroundImage: `url(${serviceHeroImage.src})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          filter: "brightness(30%)", // Reduces brightness to simulate opacity
-          width: "100%",
-        }}
-        className="absolute inset-0 opacity-50 z-10 h-[400px] lg:h-[580px]"
-      ></div> */}
+ 
       <div 
       className="relative h-72 flex justify-center items-center bg-center bg-cover"
       style={{

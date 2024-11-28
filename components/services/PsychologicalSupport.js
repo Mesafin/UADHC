@@ -3,7 +3,7 @@ import React from "react";
 
 const PsychologicalSupport = () => {
   return (
-    <div className=" bg-white p-8 my-10">
+    <div className=" bg-white p-8 mt-2">
         
    
     <div className=" flex flex-col md:flex-row gap-8">
@@ -36,7 +36,7 @@ const PsychologicalSupport = () => {
         <img
           src="/psychImage2.png"
           alt="Celebration"
-          className="absolute top-64 left-3 w-1/2 border-b-8 border-e-8 border-uRed rounded-2xl shadow-lg"
+          className="absolute hidden md:block top-64 left-3 w-1/2 border-b-8 border-e-8 border-uRed rounded-2xl shadow-lg"
         />
       </div>
     </div>

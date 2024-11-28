@@ -1,12 +1,22 @@
+import AboutUs from "@/components/about/AboutUs";
+import EligibilityEnrollment from "@/components/about/EligibilityEnrollment";
+import Gallery from "@/components/about/Gallery";
+import Mission from "@/components/about/Mission";
+import Participants from "@/components/about/Participants";
+import Staff from "@/components/about/Staff";
+import WhyUs from "@/components/about/WhyUs";
 
 export default function About() {
     return (
-      <div className="container mx-auto p-4 min-h-80">
-        <h1 className="text-3xl font-bold">About Us</h1>
-        <p className="mt-4">
-          UpLifting Adult Care is dedicated to providing exceptional care and support to adults who need assistance in daily living.
-        </p>
-      </div>
+      <>
+        <AboutUs />
+        <WhyUs />
+        <Mission />
+        <Participants />
+        <Staff />
+        <Gallery />
+        <EligibilityEnrollment />
+      </>
     );
   }
   

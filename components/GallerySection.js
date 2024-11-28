@@ -33,7 +33,7 @@ const RoundedImage = ({ src, alt }) => (
       style={{
         height: "200px"
       }}
-      className="fill"
+      className="fill transition-transform duration-300 hover:scale-110 hover:brightness-75"
     />
   </div>
 );

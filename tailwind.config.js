@@ -11,6 +11,7 @@ module.exports = {
         uRed: "#c33333", 
         footerBg: "#3d4657", 
         accent: "#6e7788", 
+        accent2: "#3E4757",
         white: "#ffffff", 
         background: "var(--background)", 
         foreground: "var(--foreground)",

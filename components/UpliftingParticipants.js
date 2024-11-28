@@ -11,14 +11,14 @@ const UpliftingParticipants = () => {
       {/* Main Container */}
       <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-12">
         {/* Left Section - Images */}
-        <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
-          <div className="rounded-lg overflow-hidden">
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 ">
+          <div className="rounded-lg overflow-hidden ">
             <Image
               src={participant2}
               alt="Engaging Activity"
               width={400}
               // height={300}
-              className="rounded-lg h-full"
+              className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"
             />
           </div>
           <div className="rounded-lg overflow-hidden">
@@ -27,7 +27,7 @@ const UpliftingParticipants = () => {
               alt="Social Connection"
               width={400}
               // height={300}
-              className="rounded-lg h-full"
+              className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"
             />
           </div>
           <div className="rounded-lg overflow-hidden">
@@ -36,7 +36,7 @@ const UpliftingParticipants = () => {
               alt="Community Offer"
               width={400}
               // height={300}
-              className="rounded-lg h-full"
+              className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"
              
             />
           </div>
@@ -46,7 +46,7 @@ const UpliftingParticipants = () => {
               alt="Professional Care"
               width={400}
               // height={300}
-              className="rounded-lg h-full"
+              className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"
             />
           </div>
         </div>

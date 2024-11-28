@@ -60,7 +60,6 @@ export default function ContactUs() {
     <div className="font-montserrat text-accent">
       {/* Header Section */}
       <section className="bg-gray-100 py-8 px-8 md:pt-12 md:pb-20 text-center">
-        <h1 className="text-4xl font-bold text-gray-800 py-4 md:py-8">CONTACT US</h1>
         <div className="w-full md:w-4/5 text-center mx-auto text-sm md:text-lg">
           <p className="text-gray-600 mt-4">
             Do you have any questions? Do you want to schedule a tour of our

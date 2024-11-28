@@ -5,14 +5,14 @@ const Wellness = () => {
   return (  
     <>  
       {/* Upper Section: Wellness & Recreation */}  
-      <section className="bg-accent text-white py-16 md:py-28">  
+      <section className="bg-accent text-white py-16 md:py-24">  
         <div className="container mx-auto px-4 font-montserrat">  
+          <h2 className="text-4xl font-bold mb-6 border-l-8 border-white ps-4">Wellness & Recreation</h2>  
             <div className='flex flex-col md:flex-row gap-6 justify-between'>
                 
         <div>
             
        
-          <h2 className="text-4xl font-bold mb-6 border-l-8 border-white ps-4">Wellness & Recreation</h2>  
           <p className="mb-6 font-semibold">  
             A healthy body and mind go hand-in-hand. Our comprehensive wellness program includes:  
           </p>  
@@ -25,7 +25,7 @@ const Wellness = () => {
             <li><strong>Cultural enrichment:</strong> Celebrate diversity with festive events and educational programs.</li>  
           </ul> 
           </div> 
-          <div className="flex justify-center">  
+          <div className="flex justify-center h-auto">  
             <Image src="/services-hero.png" alt="Wellness" width={500} height={300} className="rounded-2xl shadow-lg w-full" />  
           </div>  
         </div>  
