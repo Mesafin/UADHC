@@ -40,6 +40,7 @@ export default function CareerForm() {
       
           if (result.success) {
             alert('Form submitted successfully!');
+            setFormData({ name: '', email: '', phone: '', address: '' });
           } else {
             alert(`Error: ${result.error}`);
           }

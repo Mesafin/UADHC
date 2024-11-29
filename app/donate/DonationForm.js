@@ -60,6 +60,7 @@ const DonationForm = ({ onPaymentSuccess }) => {
       if (response.ok) {
         setDonated((prev) => prev + parseFloat(amount));
         onPaymentSuccess(data);
+        
       } else {
         setError(data.error || "Payment failed.");
       }

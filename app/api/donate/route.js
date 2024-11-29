@@ -14,6 +14,7 @@ export default async function handler(req, res) {
         payment_method: paymentMethodId,  
         confirm: true,  
       });  
+      
       res.status(200).json({ success: true, paymentIntent });  
     } catch (error) {  
       res.status(500).json({ error: error.message });  
