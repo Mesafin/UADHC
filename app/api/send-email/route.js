@@ -10,8 +10,8 @@ export async function POST(req) {
     port: 465, // SSL port (or use 587 for TLS)
     secure: true, // Use SSL
     auth: {
-      user: "mercyride24@gmail.com",
-      pass: "UADHC@godaddy"
+      user: "filimon@uadhc.com",
+      pass: "email@filimon"
     //   user: process.env.GODADDY_EMAIL, // GoDaddy Email address
     //   pass: process.env.GODADDY_EMAIL_PASSWORD, // GoDaddy email password
     },

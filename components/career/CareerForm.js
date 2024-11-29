@@ -8,7 +8,7 @@ export default function CareerForm() {
         phone: '', 
         address: '', 
         // position: '', 
-        resume: null 
+        // resume: null 
     });  
 
     const handleInputChange = (e) => {  
@@ -21,11 +21,35 @@ export default function CareerForm() {
         setFormData({ ...formData, resume: file });  
     };
 
-    const handleSubmit = (e) => {  
-        e.preventDefault();  
-        // Handle form submission logic (API call or form handling)  
-        console.log('Form submitted:', formData);  
-    };  
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+      
+        const formDataToSend = new FormData();
+        formDataToSend.append('name', formData.name);
+        formDataToSend.append('email', formData.email);
+        formDataToSend.append('phone', formData.phone);
+        formDataToSend.append('address', formData.address);
+      
+        try {
+          const response = await fetch('/api/career/upload', {
+            method: 'POST',
+            body: formDataToSend,
+          });
+      
+          const result = await response.json();
+      
+          if (result.success) {
+            alert('Form submitted successfully!');
+          } else {
+            alert(`Error: ${result.error}`);
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          alert('An error occurred while submitting the form.');
+        }
+      };
+      
+      
 
     return (  
         <div className='container w-full mx-auto font-montserrat px-8 my-8 md:my-16'>
@@ -111,7 +135,7 @@ export default function CareerForm() {
                 </div>   */}
 
                 {/* Resume Upload */}
-                <div className="mb-4">  
+                {/* <div className="mb-4">  
                     <label className="block text-uRed font-semibold">Upload Resume</label>  
                     <input   
                         type="file"   
@@ -120,7 +144,7 @@ export default function CareerForm() {
                         required  
                         className="w-full border-2 rounded py-2 px-3 text-gray-800"   
                     />  
-                </div>  
+                </div>   */}
 
                 <button type="submit" className="bg-uRed text-white py-2 px-4 rounded hover:bg-red-700">  
                     Submit  
