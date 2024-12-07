@@ -7,7 +7,7 @@ const Outlings = () => {
       {/* Section: Outings & Adventures */}
       <section className="bg-white text-gray-800 py-16 md:my-14 container mx-auto px-4 font-montserrat">
         <div className=" flex flex-col-reverse md:flex-row gap-8 justify-between lg:gap-14">
-        <div className="flex justify-center w-full md:w-1/2">
+        <div className="flex justify-center h-auto">
             <Image
               src="/outling.png"
               alt="Outings"

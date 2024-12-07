@@ -14,7 +14,7 @@ const Nourishing = () => {
             </p>  
           </div>  
           <div className=" w-full md:w-2/5">  
-            <Image src="/nourshing.png" alt="Nourishing Meals" width={500} height={300} className="rounded-lg shadow-lg w-full" />  
+            <Image src="/transport.png" alt="Nourishing Meals" width={500} height={300} className="rounded-lg shadow-lg w-full" />  
           </div>  
         </div>  
       </section>  

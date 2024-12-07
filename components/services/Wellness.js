@@ -25,8 +25,8 @@ const Wellness = () => {
             <li><strong>Cultural enrichment:</strong> Celebrate diversity with festive events and educational programs.</li>  
           </ul> 
           </div> 
-          <div className="flex justify-center h-auto">  
-            <Image src="/services-hero.png" alt="Wellness" width={500} height={300} className="rounded-2xl shadow-lg w-full" />  
+          <div className="flex justify-center h-full w-1/2">  
+            <Image src="/thriving.png" alt="Wellness" width={500} height={300} className="rounded-2xl shadow-lg w-full" />  
           </div>  
         </div>  
         </div>

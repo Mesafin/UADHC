@@ -3,15 +3,8 @@ import React from "react";
 
 const TransportSection = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between bg-white px-8 gap-8 mt-6 mb-12 md:mt-10 md:mb-20">
-      {/* left Image Section */}
-      <div className="flex-shrink-0 w-full md:w-2/5">
-        <img
-          src="/transport.png" 
-          alt="Transportation Services"
-          className="rounded-2xl object-cover w-full h-auto"
-        />
-      </div>
+    <div className="flex flex-col md:flex-row items-center justify-between bg-white px-8 gap-8 mt-6 mb-12 md:mt-10 md:mb-20">
+
       {/* right Text Section */}
       <div className="flex-1 w-full md:w-3/5 font-montserrat">
         <h2 className="text-4xl font-extrabold mb-4 border-l-8 border-uRed ps-4">Transportation & Accessibility</h2>
@@ -22,7 +15,14 @@ const TransportSection = () => {
         </p>
      
       </div>
-
+      {/* left Image Section */}
+      <div className="flex-shrink-0 w-full md:w-2/5">
+        <img
+          src="/transpo.png" 
+          alt="Transportation Services"
+          className="rounded-2xl object-cover w-full h-auto"
+        />
+      </div>
       
     </div>
   );

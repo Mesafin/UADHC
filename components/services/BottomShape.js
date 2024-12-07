@@ -10,7 +10,7 @@ const BottomShape = () => {
         <Image
           src={bottomShape}
           alt="upperShape"
-          layout="responsive" 
+          // layout="responsive" 
           width={1920} 
         />
       </div>

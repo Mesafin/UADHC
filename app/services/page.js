@@ -1,3 +1,4 @@
+"use client";
 import BottomShape from "@/components/services/BottomShape";
 import MedicalServices from "@/components/services/MedicalServices";
 import Nourishing from "@/components/services/Nourshing";
@@ -12,16 +13,40 @@ import TherapyGrid from "@/components/services/TherapyGrid";
 import Thriving from "@/components/services/Thriving";
 import TransportSection from "@/components/services/TransportSection";
 import Wellness from "@/components/services/Wellness";
+import { useRef } from "react";
 
 export default function Services() {
+  // Refs for each service section
+  const nursing = useRef(null);
+  const therapy = useRef(null);
+  const outlings = useRef(null);
+  const recreational = useRef(null);
+  const nourshing = useRef(null);
+
+  const scrollToSection = (sectionRef) => {
+    const offset = 80; 
+    if (sectionRef.current) {
+      const elementPosition = sectionRef.current.offsetTop;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+  
+
   return (
     <>
-      <ServicesHero />
+      <ServicesHero
+        onServiceClick={scrollToSection}
+        sectionRefs={{ nursing, therapy, outlings, recreational, nourshing }}
+      />
       <ServiceVideo />
-      <MedicalServices />
-      <ReviewSlider />
+      <div ref={nursing} >
+        <MedicalServices />
+      </div>
       <Shapes />
-      <div className="bg-[#BB3535] font-montserrat">
+      <div className="bg-[#BB3535] font-montserrat" ref={therapy}>
         <SideImageSection
           imageSrc="/therapyImage.png"
           title="Therapeutic Care"
@@ -38,12 +63,21 @@ export default function Services() {
       <BottomShape />
       <div className="container mx-auto">
         <PsychologicalSupport />
+      </div>
+      <div ref={outlings}>
+        <Outlings />
+      </div>
+      <div className="container mx-auto">
         <TransportSection />
       </div>
-      <Wellness />
-      <Outlings />
-      <Nourishing />
+      <div ref={recreational}>
+        <Wellness />
+      </div>
       <Thriving />
+      <div ref={nourshing}>
+        <Nourishing />
+      </div>
+      <ReviewSlider />
     </>
   );
 }
