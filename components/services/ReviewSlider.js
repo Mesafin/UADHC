@@ -8,15 +8,15 @@ const reviews = [
   {
     id: 1,
     comment:
-      "My 90-year-old mom loves going to Uplifting twice a week. It’s a relief knowing she’s cared for while I run errands. The staff is amazing!",
-    reviewer: "Emily R.",
+      "Uplifting Adult Day Center will bring so much peace to our family. We are eagerly waiting for the program to open, as it's clear how much this center is needed in our community.",
+    reviewer: "Zuri.",
     stars: 5,
   },
   {
     id: 2,
     comment:
-      "Sending my husband to Uplifting was hard, but the loving and kind staff made it worth it. He’s happier and more engaged now.",
-    reviewer: "Laura P.",
+      "As an older man living alone, I've struggled with chronic pain and the emotional toll that comes with it. The idea of attending Uplifting Adult Day Center is comforting.",
+    reviewer: "Mike.",
     stars: 5,
   },
   {
@@ -103,9 +103,9 @@ export default function ReviewSlider() {
         {visibleReviews.map((review) => (
           <div
             key={review.id}
-            className="bg-blue-50 rounded-lg shadow-2xl px-12 pt-14 pb-8"
+            className="bg-blue-50 rounded-lg shadow-2xl px-12 pt-10 pb-8"
           >
-            <p className="text-gray-700 mb-16 h-32 text-xl">{review.comment}</p>
+            <p className="text-gray-700 mb-20 h-48 text-xl">{review.comment}</p>
             <div className="flex items-center space-x-5">
               {/* First Letter of Reviewer's First Name */}
               <div className="h-12 w-12 bg-gray-300 rounded-full flex items-center justify-center text-xl font-bold text-gray-700">
