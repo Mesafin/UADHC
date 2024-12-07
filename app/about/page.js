@@ -1,5 +1,4 @@
 import AboutUs from "@/components/about/AboutUs";
-import EligibilityEnrollment from "@/components/about/EligibilityEnrollment";
 import Gallery from "@/components/about/Gallery";
 import Mission from "@/components/about/Mission";
 import Participants from "@/components/about/Participants";
@@ -15,7 +14,6 @@ export default function About() {
         <Participants />
         <Staff />
         <Gallery />
-        <EligibilityEnrollment />
       </>
     );
   }

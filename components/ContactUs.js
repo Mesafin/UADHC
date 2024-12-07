@@ -104,7 +104,7 @@ export default function ContactUs() {
         </div>
       </section>
 
-      <div className="w-full flex flex-col lg:flex-row h-auto lg:h-[500px] container mx-auto ">
+      <div className="w-full flex flex-col lg:flex-row h-auto lg:h-[500px] container mx-auto mb-16 ">
         {/* Form Section */}
         <section className="py-12 ms-0 lg:ms-8 w-full lg:w-1/2 bg-gray-100 font-montserrat h-full">
           <div className="px-4 h-full flex flex-col justify-center">

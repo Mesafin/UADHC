@@ -56,10 +56,13 @@ const Navbar = () => {
               About Us
             </Link>
             <Link href="/services" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
-              Our Services
+              Services
             </Link>
             <Link href="/career" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
-              Career Opportunities
+              Career
+            </Link>
+            <Link href="/resources" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
+              Resources
             </Link>
           </div>
 

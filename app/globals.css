@@ -124,8 +124,8 @@ body {
   background-image: url('../public/home/wave-btm.svg');
   background-position: center;
   background-size: cover;
-  background-color: #CEDAE3;
-  margin-bottom: -350px;
+  /* background-color: #CEDAE3; */
+  margin-bottom: -280px;
   margin-top: -5px;
 }
 .topSvg{
@@ -136,6 +136,7 @@ body {
   background-image: url('../public/home/wave-top.svg');
   background-position: center;
   background-size: cover;
+  background-color: white;
 }
 
 /* mobile responsive */
@@ -167,3 +168,20 @@ body {
   min-height: 168px;
 }
 } */
+
+
+
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.group-hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
+}
+.rotate-x-180 {
+  transform: rotateY(180deg);
+}

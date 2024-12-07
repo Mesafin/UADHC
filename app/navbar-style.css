@@ -71,7 +71,7 @@ body{
 .nav-area {
     width: 100%;
 
-    background-color: #00429b;
+    background-color: #6e7788;
     height: 40px;
     color: white;
 }
@@ -129,7 +129,7 @@ body{
 .topHeader {
     position: relative;
     align-items: center;
-    background-color: #21225F;
+    background-color: #6e7788;
     /* padding: 10px 20px; */
     width: 100%;
     height: auto;

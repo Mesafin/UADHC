@@ -5,7 +5,7 @@ const Thriving = () => {
   return (
     <>
        {/* Section: Thriving Community */}  
-       <section className="bg-white pt-16 lg:mt-8 font-montserrat">  
+       <section className="bg-white py-16 lg:mt-8 font-montserrat">  
         <div className="container mx-auto px-8 flex flex-col-reverse md:flex-row items-center gap-8">  
            
           <div className=" w-full md:w-1/2">  

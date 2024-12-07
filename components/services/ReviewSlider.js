@@ -1,37 +1,51 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import { GrNext, GrPrevious } from "react-icons/gr";
+import reviewImage from "../../public/google-reviews.webp";
 
 const reviews = [
   {
     id: 1,
-    comment: "This service exceeded my expectations. The staff was professional, and the process was seamless from start to finish. Highly recommend!",
-    reviewer: "John Doe",
-    designation: "Project Manager",
+    comment:
+      "My 90-year-old mom loves going to Uplifting twice a week. It’s a relief knowing she’s cared for while I run errands. The staff is amazing!",
+    reviewer: "Emily R.",
+    stars: 5,
   },
   {
     id: 2,
-    comment: "Absolutely fantastic experience. The customer support team went above and beyond to resolve my issue quickly.",
-    reviewer: "Sarah Smith",
-    designation: "Software Engineer",
+    comment:
+      "Sending my husband to Uplifting was hard, but the loving and kind staff made it worth it. He’s happier and more engaged now.",
+    reviewer: "Laura P.",
+    stars: 5,
   },
   {
     id: 3,
-    comment: "I've tried many similar services, but this one stands out for its attention to detail and user-friendly interface.",
-    reviewer: "Carlos Mendes",
-    designation: "Graphic Designer",
+    comment:
+      "My mom started going recently, and she absolutely loves it. The staff is friendly, and she’s always busy with fun activities.",
+    reviewer: "James T.",
+    stars: 4,
   },
   {
     id: 4,
-    comment: "Reliable and efficient. I couldn't be happier with the results. The team truly cares about their customers.",
-    reviewer: "Emily Johnson",
-    designation: "Marketing Specialist",
+    comment:
+      "My 95-year-old dad attends a few times a week. He always thanks us for taking him. The staff keeps him active and cared for.",
+    reviewer: "Sophia L.",
+    stars: 5,
   },
   {
     id: 5,
-    comment: "A top-notch service with excellent follow-through. They delivered exactly what was promised, and more!",
-    reviewer: "David Lee",
-    designation: "Business Consultant",
+    comment:
+      "The team is so kind and patient with my loved one. They help with activities, and I love getting weekly updates about the schedule.",
+    reviewer: "Daniel K.",
+    stars: 4,
+  },
+  {
+    id: 6,
+    comment:
+      "My mom is always smiling after her day at Uplifting. She enjoys making friends and staying busy. The staff is so supportive!",
+    reviewer: "Olivia M.",
+    stars: 5,
   },
 ];
 
@@ -39,22 +53,21 @@ export default function ReviewSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextReviews = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex + 1) % Math.ceil(reviews.length / 3)
+    setCurrentIndex(
+      (prevIndex) => (prevIndex + 1) % Math.ceil(reviews.length / 3)
     );
   };
 
   const prevReviews = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + Math.ceil(reviews.length / 3)) % Math.ceil(reviews.length / 3)
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + Math.ceil(reviews.length / 3)) %
+        Math.ceil(reviews.length / 3)
     );
   };
 
   // Calculate visible reviews
-  const visibleReviews = reviews.slice(
-    currentIndex * 3,
-    currentIndex * 3 + 3
-  );
+  const visibleReviews = reviews.slice(currentIndex * 3, currentIndex * 3 + 3);
 
   return (
     <div className="container mx-auto pb-8 px-6 font-montserrat relative">
@@ -64,11 +77,19 @@ export default function ReviewSlider() {
           onClick={prevReviews}
           className="text-gray-500 hidden lg:block hover:text-uRed focus:outline-none absolute top-[55%] left-4"
         >
-          <GrPrevious className="text-5xl"  />
+          <GrPrevious className="text-5xl" />
         </button>
-        <h2 className="text-2xl font-bold text-center mx-auto text-gray-800 my-14 ">
-          What People Are Saying
-        </h2>
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center mx-auto my-14">
+          <h2 className="text-2xl font-bold text-center mx-auto text-gray-800 items-center ">
+            What People Are Saying
+          </h2>
+          <Image
+            src={reviewImage}
+            height={100}
+            alt="google-review"
+            className="mb-8 md:mb-0"
+          />
+        </div>
         <button
           onClick={nextReviews}
           className="text-gray-500 hover:text-uRed hidden lg:block focus:outline-none absolute top-[55%] right-4"
@@ -86,10 +107,14 @@ export default function ReviewSlider() {
           >
             <p className="text-gray-700 mb-16 h-32 text-xl">{review.comment}</p>
             <div className="flex items-center space-x-5">
-              <div className="h-12 w-12 bg-gray-300 rounded-full"></div>
+              {/* First Letter of Reviewer's First Name */}
+              <div className="h-12 w-12 bg-gray-300 rounded-full flex items-center justify-center text-xl font-bold text-gray-700">
+                {review.reviewer.charAt(0)}
+              </div>
+              {/* Reviewer Name and Stars */}
               <div>
                 <h3 className="text-lg font-bold">{review.reviewer}</h3>
-                <p className="text-gray-500">{review.designation}</p>
+                <p className="text-yellow-500">{"⭐".repeat(review.stars)}</p>
               </div>
             </div>
           </div>

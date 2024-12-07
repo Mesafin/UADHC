@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import slider1 from "../public/hero/slide-1.webp";
-import slider2 from "../public/hero/slide-2.webp";
+import slider1 from "../public/hero/slide-1.png";
+import slider2 from "../public/hero/slide-2.png";
 import slider3 from "../public/hero/slide-3.png";
 import slider4 from "../public/hero/slider-4.png";
 import slider5 from "../public/hero/slider-5.png";
