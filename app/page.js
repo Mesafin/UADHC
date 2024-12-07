@@ -1,9 +1,7 @@
-import GallerySection from "@/components/GallerySection";
-import Hero2 from "@/components/Hero2";
-import RotatingCards from "@/components/RotatingCards";
+import Hero2 from "@/components/home/Hero2";
 import ReviewSlider from "@/components/services/ReviewSlider";
-import ServicesSection from "@/components/ServicesSection";
-import UpliftingParticipants from "@/components/UpliftingParticipants";
+import ServicesSection from "@/components/home/ServicesSection";
+import UpliftingParticipants from "@/components/home/UpliftingParticipants";
 
 export default function Home() {
   return (
@@ -12,8 +10,6 @@ export default function Home() {
         <Hero2 />
         <UpliftingParticipants />
         <ServicesSection />
-        {/* <GallerySection /> */}
-        {/* <RotatingCards /> */}
         <ReviewSlider />
       </div>
     </>

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import logo from "../public/NavLogo-2.jpg";
+import logo from "../../public/NavLogo-2.jpg";
 import Image from "next/image";
 import React, { useState, useCallback } from "react";
 

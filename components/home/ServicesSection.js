@@ -1,16 +1,7 @@
 import Image from "next/image";
-import {
-  FaUserNurse,
-  FaRunning,
-  FaUtensils,
-  FaHouseUser,
-  FaClinicMedical,
-} from "react-icons/fa";
-import elderlyCare from "../public/home/adventure2.png";
+import elderlyCare from "../../public/home/adventure2.png";
 import Link from "next/link";
-import ServiceCard from "./ServiceCard";
 import RotatingCards from "./RotatingCards";
-import { MdNavigateNext } from "react-icons/md";
 
 const ServicesSection = () => {
   return (
@@ -73,29 +64,6 @@ const ServicesSection = () => {
           Our Services
         </h2>
 
-        {/* Services Grid */}
-        {/* <div className="grid grid-cols-2 h-[400px] md:grid-cols-3 lg:grid-cols-5 gap-6 pb-12 ">
-          <ServiceCard
-            icon={<FaUserNurse size={40} className="text-gray-600" />}
-            title="Nursing Services"
-          />
-          <ServiceCard
-            icon={<FaClinicMedical size={40} className="text-gray-700" />}
-            title="Therapeutic Care"
-          />
-          <ServiceCard
-            icon={<FaRunning size={40} className="text-gray-700" />}
-            title="Outings"
-          />
-          <ServiceCard
-            icon={<FaHouseUser size={40} className="text-gray-700" />}
-            title="Recreational Activities"
-          />
-          <ServiceCard
-            icon={<FaUtensils size={40} className="text-gray-700" />}
-            title="Nutritional Meals"
-          />
-        </div> */}
 
         <RotatingCards />
 

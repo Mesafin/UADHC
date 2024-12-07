@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import footerlogo from "../public/favicon3.png";
+import footerlogo from "../../public/favicon3.png";
 import Image from "next/image";
 
 const FooterLogo = () => {

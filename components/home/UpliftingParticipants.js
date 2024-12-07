@@ -1,8 +1,8 @@
 import Image from "next/image";
-import participant1 from "../public/home/participant1.png";
-import participant2 from "../public/home/participant2.png";
-import participant3 from "../public/home/participant3.png";
-import participant4 from "../public/home/participant4.png";
+import participant1 from "../../public/home/participant1.png";
+import participant2 from "../../public/home/participant2.png";
+import participant3 from "../../public/home/participant3.png";
+import participant4 from "../../public/home/participant4.png";
 import Link from "next/link";
 
 const UpliftingParticipants = () => {
