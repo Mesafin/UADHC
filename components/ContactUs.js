@@ -62,13 +62,11 @@ export default function ContactUs() {
       <section className="bg-gray-100 py-8 px-8 md:pt-12 md:pb-20 text-center">
         <div className="w-full md:w-4/5 text-center mx-auto text-sm md:text-lg">
           <p className="text-gray-600 mt-4">
-            Do you have any questions? Do you want to schedule a tour of our
-            center? Do you want to donate and have questions related to it? We
-            would love to hear from you and clear all of your questions.
+            Do you want to schedule a tour of our
+            center? Do you have any questions? 
           </p>
           <p className="text-gray-600 mt-2">
-            Contact the Uplifting Adult Day Center by filling out the form
-            below. We will get back to you as soon as possible.
+          Please fill out the form below and we will get back to you as soon as possible.
           </p>
         </div>
       </section>
@@ -82,7 +80,8 @@ export default function ContactUs() {
               <MdLocationPin className="text-5xl text-white" />
             </div>
             <p className="text-lg font-bold">
-              13th Street 47 W 13th St, New York, NY
+            Electric Ave 508 N, Inglewood, CA
+              
             </p>
           </div>
 
@@ -99,7 +98,7 @@ export default function ContactUs() {
             <div className="flex justify-center items-center text-5xl mb-4">
               <IoIosMail />
             </div>
-            <p className="text-lg font-bold">info@uadc.com</p>
+            <p className="text-lg font-bold">filimon@uadhc.com</p>
           </div>
         </div>
       </section>
@@ -118,7 +117,7 @@ export default function ContactUs() {
             </div>
             <form
               ref={form}
-              onSubmit={sendEmail} // Add the submit handler
+              onSubmit={sendEmail} 
               className="grid lg:grid-cols-2 gap-6 mx-8 "
             >
               <input

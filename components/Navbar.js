@@ -2,19 +2,16 @@
 import Link from "next/link";
 import logo from "../public/NavLogo-2.jpg";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Function to close the menu
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = useCallback(() => setMenuOpen(false), []);
 
   return (
-    <header
-      id="navbar"
-      className="bg-white shadow-md sticky top-0 z-50"
-    >
+    <header id="navbar" className="bg-white shadow-md sticky top-0 z-50">
       <div className="mx-auto w-full container sm:px-6 lg:px-8 flex justify-between items-center h-20">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -68,6 +65,7 @@ const Navbar = () => {
 
           {/* Buttons */}
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 pt-5 lg:space-x-4 px-6 lg:px-0 mt-4 lg:mt-0">
+           
             <Link href="/donate">
               <button
                 onClick={closeMenu}

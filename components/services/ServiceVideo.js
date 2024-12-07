@@ -18,7 +18,7 @@ const ServiceVideo = () => {
         <div className="w-full h-2/3" style={{ paddingBottom: "56.25%" }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-            src="https://www.youtube.com/embed/DRDBd5u8CJU?si=tOkG7tDUATj2MZdy&rel=0&modestbranding=1&end=118"
+            src="https://www.youtube.com/embed/DRDBd5u8CJU?si=tOkG7tDUATj2MZdy&rel=0&modestbranding=1&end=120"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

@@ -129,7 +129,7 @@ body{
 .topHeader {
     position: relative;
     align-items: center;
-    background-color: #6e7788;
+    /* background-color: #6e7788; */
     /* padding: 10px 20px; */
     width: 100%;
     height: auto;

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="text-white bg-footerBg md:p-10 p-5 pt-20 md:pt-24 font-chunk  ">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-2 md:pe-6">
             {/* <h2 className="text-2xl font-bold mb-8">
             Uplifting <span className="text-red-500">Adult</span> Day Center
@@ -41,39 +41,17 @@ const Footer = () => {
             </div>
           </div>
 
+
           <div>
-            <h3 className="text-lg font-semibold mb-8 md:mb-16 tracking-wider">
-              Quick Links
+            <h3 className="text-lg font-semibold mb-8 md:mb-10 tracking-wider">
+              Useful Links
             </h3>
             <ul>
-              <li>
-                <a href="/about" className="hover:text-red-500">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="/services" className="hover:text-red-500">
-                  Services
-                </a>
-              </li>
               <li>
                 <a href="/donate" className="hover:text-red-500">
                   Donate
                 </a>
               </li>
-              <li>
-                <a href="/contact" className="hover:text-red-500">
-                  Appointment
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-8 md:mb-16 tracking-wider">
-              Useful Links
-            </h3>
-            <ul>
               <li>
                 <a href="/about" className="hover:text-red-500">
                   About Us
@@ -96,32 +74,10 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* neews letter */}
-          {/* <div className="">
-          <h3 className="text-lg font-semibold tracking-widest mb-8 md:mb-16">NEWSLETTER</h3>
-          <p>
-          Stay updated on our latest programs, services, and events that help seniors thrive in a community
-          designed for their well-being.
-          </p>
-          <div className="flex flex-col gap-6 ">
-            
 
-          <Link href="/contact">
-          <button className="mt-8 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
-            Contact Us
-          </button>
-          </Link>
-          <Link href="/appointment">
-          <button className="mt-2 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
-            Make an appointment
-          </button>
-          </Link>
-         
-          </div>
-        </div> */}
           {/* Reach out */}
           <div className="">
-            <h3 className="text-lg font-semibold tracking-wider mb-8 md:mb-16">
+            <h3 className="text-lg font-semibold tracking-wider mb-8 md:mb-10">
               Reach Out to Us
             </h3>
             <p>
@@ -134,13 +90,44 @@ const Footer = () => {
                   Contact Us
                 </button>
               </Link>
-              <Link href="/appointment">
+              {/* <Link href="/appointment">
                 <button className="mt-2 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
                   Make an appointment
                 </button>
-              </Link>
+              </Link> */}
+              <div>
+                <ul className="flex flex-row gap-8">
+                  <li>
+                    <a href="https://www.facebook.com/uadcla/" target="_blank">
+                      <i className="fab fa-facebook-f text-2xl hover:text-uRed"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/uadcla/
+"
+                      target="_blank"
+                    >
+                      <i className="fab fa-linkedin text-2xl hover:text-uRed"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.instagram.com/uadcla/" target="_blank">
+                      <i className="fab fa-instagram text-2xl hover:text-uRed"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+        </div>
+          {/* All rights reserved */}
+          <div className="text-center mt-8">
+          <p className="font-light">
+            &copy; {new Date().getFullYear()} Uplifting Adult Day Center. All rights reserved.
+          </p>
         </div>
       </footer>
     </>

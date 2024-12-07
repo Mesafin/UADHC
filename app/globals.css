@@ -185,3 +185,31 @@ body {
 .rotate-x-180 {
   transform: rotateY(180deg);
 }
+
+
+/* Back to top */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-top.open {
+  display: block;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  padding: 8px;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

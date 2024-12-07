@@ -4,7 +4,7 @@ import Language from "./Language";
 
 const Nav = () => {
   return (
-    <div className="topHeader">
+    <div className="topHeader bg-accent2">
       <div className="container mx-auto p-4 header">
         <ul className="contact-info">
           <li className="contact_list">
@@ -30,7 +30,7 @@ const Nav = () => {
             <div className="cta_content">
               <span>
                 <i className="fa fa-envelope"></i>{" "}
-                <a href="mailto:filimon@uadhc.com">support@uadhc.com</a>
+                <a href="mailto:filimon@uadhc.com">filimon@uadhc.com</a>
               </span>
             </div>
           </li>
@@ -44,29 +44,35 @@ const Nav = () => {
 
           <ul className="social-links">
             <li>
-              {/*  https://www.facebook.com/profile.php?id=61556155242196 */}
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/uadcla/" target="_blank">
                 <i className="fab fa-facebook-f"></i>
               </a>
             </li>
 
             <li>
-            <a href="#" target="_blank">
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </li> 
-            <li>
-              {/* href="https://twitter.com/i/flow/login?redirect_after_login=%2FJACOME2695" */}
+              <a
+                href="https://www.linkedin.com/company/uadcla/
+"
+                target="_blank"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            {/* <li>
               <a href="#" target="_blank">
                 <i className="fab fa-twitter"></i>
               </a>
-            </li>
+            </li> */}
 
-            {/*  <li>
-            <a href="https://www.instagram.com/jacome8316/" target="_blank">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </li> */}
+            <li>
+              <a
+                href="https://www.instagram.com/uadcla/
+"
+                target="_blank"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

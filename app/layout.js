@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Navbar from "@/components/Navbar";
 import FooterLogo from "@/components/FooterLogo";
+import BackToTop from "@/components/BackToTop";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
         {children}
         <FooterLogo />
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );
