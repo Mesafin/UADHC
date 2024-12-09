@@ -105,7 +105,7 @@ export default function ReviewSlider() {
             key={review.id}
             className="bg-blue-50 rounded-lg shadow-2xl px-12 pt-10 pb-8"
           >
-            <p className="text-gray-700 mb-20 h-48 text-xl">{review.comment}</p>
+            <p className="text-gray-700 mb-20 h-52 md:h-48 text-xl">{review.comment}</p>
             <div className="flex items-center space-x-5">
               {/* First Letter of Reviewer's First Name */}
               <div className="h-12 w-12 bg-gray-300 rounded-full flex items-center justify-center text-xl font-bold text-gray-700">

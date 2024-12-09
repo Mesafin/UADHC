@@ -10,7 +10,7 @@ const PsychologicalSupport = () => {
         <div className="w-full md:w-2/3 font-montserrat">
             
        
-      <h2 className="text-5xl font-bold mb-4 md:mb-8 border-l-8 border-uRed ps-4">Psychological Support</h2>
+      <h2 className="md:text-5xl text-3xl font-bold mb-4 md:mb-8 border-l-8 border-uRed ps-4">Psychological Support</h2>
       <p className="my-6 font-bold text-uRed">Nurturing Mental Well-being</p>
       <p className="text-gray-700 mb-4">
         We understand the importance of mental health in overall well-being. Our psychology team provides support and guidance to help participants manage emotional challenges.
