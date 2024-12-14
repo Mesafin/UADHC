@@ -148,26 +148,18 @@ body {
  
 }
 
-/* @media (max-width: 1027px) {
-.imageRatio{
-  height: 236px;
+@media (min-width: 768px) {
+  .heart-shape {
+    clip-path: path('M50% 0% C75% 0%, 100% 25%, 100% 50% C100% 75%, 50% 100%, 50% 100% C50% 100%, 0% 75%, 0% 50% C0% 25%, 25% 0%, 50% 0% Z');
+  }
 }
+
+@media (max-width: 768px) {
+  .heart-shape {
+    clip-path: circle(50%);
+  }
 }
-@media (min-width: 1027px) {
-.imageRatio{
-  min-height: 136px;
-}
-}
-@media (min-width: 1535px) {
-.imageRatio{
-  min-height: 168px;
-}
-}
-@media (min-width: 1635px) {
-.imageRatio{
-  min-height: 168px;
-}
-} */
+
 
 
 

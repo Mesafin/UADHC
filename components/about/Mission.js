@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Mission = () => {
@@ -9,7 +10,7 @@ const Mission = () => {
           <span className="text-uRed">Vision</span>
         </h2>
 
-        <section className=" text-accent2 my-4 md:my-10 ">
+        {/* <section className=" text-accent2 my-4 md:my-10 ">
           <div className="items-center">
             <div className="text-2xl p-4 text-start  md:text-center">
               <span className="text-uRed text-3xl font-bold mr-6">
@@ -26,14 +27,63 @@ const Mission = () => {
               where individuals discover happiness, purpose, and connection.
             </div>
           </div>
+          <Image
+          src="/participants.png"
+          width={500}
+          height={500}
+          />
+        </section> */}
+        <section className="text-accent2 my-4 md:my-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Mission Section */}
+            <div className="p-4 text-start md:text-center">
+              <span className="text-uRed text-3xl font-bold mr-6">
+                Mission:
+              </span>
+              <p className="text-2xl">
+                To enhance lives through compassionate, personalized care in a
+                nurturing and engaging environment.
+              </p>
+            </div>
+            <div className="relative w-80 h-80 mx-auto hidden md:block">
+              <div
+                className="w-full h-full bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/home/image4.png')",
+                  clipPath:
+                    "path('M150 0C230 0 300 60 300 140C300 240 150 300 150 300C150 300 0 240 0 140C0 60 70 0 150 0Z')",
+                }}
+              ></div>
+            </div>
+
+            {/* Vision Section */}
+            <div className="relative w-80 h-80 mx-auto ">
+              <div
+                className="w-full h-full bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/home/image1.png')",
+                  clipPath:
+                    "path('M150 0C230 0 300 60 300 140C300 240 150 300 150 300C150 300 0 240 0 140C0 60 70 0 150 0Z')",
+                }}
+              ></div>
+            </div>
+            <div className="p-4 text-start md:text-center">
+              <span className="text-uRed text-3xl font-bold mr-6">Vision:</span>
+              <p className="text-2xl">
+                To set a new standard in adult day care, building a community
+                where individuals discover happiness, purpose, and connection.
+              </p>
+            </div>
+           
+          </div>
         </section>
 
-        <h3 className="text-4xl font-bold text-accent2 py-4 md:pt-10 md:pb-6">
+        <h3 className="text-4xl font-bold text-accent2 ">
           Our <span className="text-uRed">Core Values</span>
         </h3>
 
         <div className="flex flex-col md:flex-row items-center">
-          <ul className=" text-accent2 ps-2 text-xl px-4 py-6  space-y-2 md:space-y-3">
+          <ul className=" text-accent2 ps-2 text-xl px-4  space-y-2 md:space-y-3">
             <li className="">
               <span className="text-uRed font-semibold text-2xl mr-2">
                 {" "}
