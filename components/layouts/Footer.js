@@ -48,11 +48,6 @@ const Footer = () => {
             </h3>
             <ul>
               <li>
-                <a href="/donate" className="hover:text-red-500">
-                  Donate
-                </a>
-              </li>
-              <li>
                 <a href="/about" className="hover:text-red-500">
                   About Us
                 </a>
@@ -63,6 +58,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+              <a href="/resources" className="hover:text-red-500">
+                  Resources
+                </a>
+              </li>
+              <li>
+             
                 <a href="/contact" className="hover:text-red-500">
                   Contact us
                 </a>
