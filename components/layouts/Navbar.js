@@ -46,39 +46,52 @@ const Navbar = () => {
         >
           {/* Links */}
           <div className="flex flex-col lg:flex-row lg:space-x-6 pt-5 px-6 lg:px-0">
-            <Link href="/" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className="text-gray-700 hover:text-red-600 py-2"
+            >
               Home
             </Link>
-            <Link href="/about" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
+            <Link
+              href="/about"
+              onClick={closeMenu}
+              className="text-gray-700 hover:text-red-600 py-2"
+            >
               About Us
             </Link>
-            <Link href="/services" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
+            <Link
+              href="/services"
+              onClick={closeMenu}
+              className="text-gray-700 hover:text-red-600 py-2"
+            >
               Services
             </Link>
-            <Link href="/career" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
+            <Link
+              href="/career"
+              onClick={closeMenu}
+              className="text-gray-700 hover:text-red-600 py-2"
+            >
               Career
             </Link>
-            <Link href="/resources" onClick={closeMenu} className="text-gray-700 hover:text-red-600 py-2">
+            <Link
+              href="/resources"
+              onClick={closeMenu}
+              className="text-gray-700 hover:text-red-600 py-2"
+            >
               Resources
             </Link>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 pt-5 lg:space-x-4 px-6 lg:px-0 mt-4 lg:mt-0">
-           
-            <Link href="/donate">
-              <button
-                onClick={closeMenu}
-                className="bg-gray-800 font-montserrat font-semibold text-sm text-white px-4 py-2 rounded-full hover:bg-gray-700"
-              >
-                Donate
-              </button>
-            </Link>
-            <Link href="/contact">
-              <button
-                onClick={closeMenu}
-                className="bg-uRed text-sm font-montserrat font-semibold text-white px-4 py-2 rounded-full hover:bg-red-500"
-              >
+            <div className=" bg-gray-800 font-montserrat font-semibold text-sm text-white px-4 py-2 rounded-full hover:bg-gray-700 w-fit">
+              <a href="tel:+1-626-232-1582" className="phone "> Call Us {"    "}
+                +1-626-232-1582{" "}
+              </a>
+            </div>
+            <Link href="/contact" onClick={closeMenu}>
+              <button className="bg-uRed text-sm font-montserrat font-semibold text-white px-4 py-2 rounded-full hover:bg-red-500">
                 Contact Us
               </button>
             </Link>

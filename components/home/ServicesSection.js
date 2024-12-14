@@ -23,12 +23,7 @@ const ServicesSection = () => {
               A Place to Thrive
             </h3>
             <p className="mb-6">
-              Welcome to Uplifting Adult Day Center – where every day is an
-              adventure! Our center is buzzing with fun and excitement, offering
-              a mix of social events, physical activities, and creative
-              projects. With our dedicated team, you’ll find a supportive
-              community where friendships blossom and every participant feels
-              right at home.
+            Our center is buzzing with fun and excitement, offering a mix of social events, physical activities, and creative projects. With our dedicated team, you’ll find a supportive community where friendships blossom and every participant feels right at home
             </p>
             <h4 className="text-xl font-bold mb-4 hidden md:block">
               Come Join the Fun!

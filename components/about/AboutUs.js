@@ -15,7 +15,8 @@ const AboutUs = () => {
             </div>
             <div className="md:w-1/2 md:pl-12">
               <h2 className="text-4xl font-bold text-center md:text-start mb-6">ABOUT US</h2>
-              <p className=" xl:leading-relaxed px-6 md:px-0 pb-6">
+              <h2 className="text-2xl font-bold text-start md:text-start mb-4">Our Story: Built on Passion, Purpose, and People</h2>
+              {/* <p className=" xl:leading-relaxed px-6 md:px-0 pb-6">
                 At Uplifting Adult Day Center, we are dedicated to providing a
                 nurturing, friendly, and safe environment to every senior of
                 South Los Angeles regardless of race, religion, or nationality.
@@ -26,6 +27,9 @@ const AboutUs = () => {
                 resources and services our family members need. We are making
                 sure to give affordable services to our participants through
                 assistance and funds from our community.
+              </p> */}
+              <p className=" xl:leading-relaxed px-6 md:px-0 pb-6">
+              We are committed to provide a supportive and empowering environment where individuals feel valued, connected, and respected. We offer personalized care tailored to each participant’s needs, fostering dignity and building meaningful relationships. Our center combines a nurturing atmosphere with engaging activities to enhance the quality of life for seniors while giving families peace of mind.
               </p>
             </div>
           </div>

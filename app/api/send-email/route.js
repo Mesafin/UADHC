@@ -1,25 +1,25 @@
 // app/api/send-email/route.js
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 export async function POST(req) {
   const { name, email, phone, services, message } = await req.json();
 
-  // Configure Nodemailer with SMTP settings for GoDaddy Workspace Email
-  const transporter = nodemailer.createTransport({
-    host: 'smtpout.secureserver.net',
-    port: 465, // SSL port (or use 587 for TLS)
-    secure: true, // Use SSL
-    auth: {
-      user: "filimon@uadhc.com",
-      pass: "email@filimon"
-    //   user: process.env.GODADDY_EMAIL, // GoDaddy Email address
-    //   pass: process.env.GODADDY_EMAIL_PASSWORD, // GoDaddy email password
-    },
-  });
+ const transporter = nodemailer.createTransport({
+  host: 'smtp.office365.com',
+  port: 587,
+  secure: false,
+  auth: {
+    user: process.env.GODADDY_EMAIL,
+    pass: process.env.GODADDY_EMAIL_PASSWORD,
+  },
+  logger: true,
+  debug: true,
+});
+
 
   const mailOptions = {
-    from: email, // Sender's email (from form)
-    to: 'filimon@uadhc.com', // Recipient email (your email)
+    from: `"${name}" <mercyride24@gmail.com>`, // Sender's email (from form)
+    to: "filimon@uadhc.com", // Recipient email (your email)
     subject: `Contact form submission from ${name}`,
     text: `
       Name: ${name}
@@ -42,13 +42,15 @@ export async function POST(req) {
     await transporter.sendMail(mailOptions);
 
     return new Response(
-      JSON.stringify({ message: 'Email sent successfully' }),
+      JSON.stringify({ message: "Email sent successfully" }),
       { status: 200 }
     );
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error("Error sending email:", error);
     return new Response(
-      JSON.stringify({ error: 'Failed to send email. Please try again later.' }),
+      JSON.stringify({
+        error: "Failed to send email. Please try again later.",
+      }),
       { status: 500 }
     );
   }

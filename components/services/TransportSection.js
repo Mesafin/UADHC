@@ -10,7 +10,7 @@ const TransportSection = () => {
         <h2 className="text-4xl font-extrabold mb-4 border-l-8 border-uRed ps-4">Transportation & Accessibility</h2>
         <p className="font-bold text-uRed my-6">Everyone can Travel with Ease!</p>
         <p className="text-gray-700 mb-4">
-          At Uplifting Day Center, we believe that everyone deserves the freedom to explore and connect. That’s why we
+          We believe that everyone deserves the freedom to explore and connect. That’s why we
           offer convenient and reliable transportation services throughout South Los Angeles, including Compton, Inglewood, Hawthorne, Gardena, Lennox, Westmont, Hyde Park, Knolls, Manchester Square, and beyond. Our accessible vehicles ensure individuals of all abilities can participate fully in our programs.
         </p>
      

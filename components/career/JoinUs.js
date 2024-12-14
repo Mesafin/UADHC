@@ -10,7 +10,7 @@ const JoinUs = () => {
       <div className="flex-shrink-0 w-full md:w-2/5">
         <img
           src="/career.png" 
-          alt="Transportation Services"
+          alt="career oportunieties at uplifting day center"
           className=" object-cover w-full h-auto"
         />
       </div>
@@ -19,7 +19,7 @@ const JoinUs = () => {
         <h2 className="text-5xl font-bold mb-4 border-l-8 border-uRed ps-4">Join Our Team</h2>
         <p className="text-gray-700 mb-4">
             
-            Make a difference in the lives of seniors by joining the Uplifting Day Center team. We’re seeking compassionate individuals to provide exceptional care and support. Whether you’re a seasoned professional or just starting out, your passion and dedication are essential. Join us in creating a brighter future for our participants.  
+            Make a difference in the lives of seniors by joining our team. We’re seeking compassionate individuals to provide exceptional care and support. Whether you’re a seasoned professional or just starting out, your passion and dedication are essential. Join us in creating a brighter future for our participants.  
 
         </p>
      

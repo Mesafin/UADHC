@@ -31,22 +31,28 @@ const Hero2 = () => {
       }}
     >
       <div className="absolute inset-0  bg-white opacity-70"></div>
-      <div className="container mx-auto flex flex-col md:flex-row gap-12 md:gap-8 justify-between items-center relative z-10 px-6 py-16 lg:py-32">
+      <div className="container mx-auto flex flex-col md:flex-row gap-12 md:gap-8 justify-between items-center relative z-10 px-6 py-16 lg:py-28">
         {/* Left Side (Text and Button) */}
-        <div className="w-full md:w-1/2 text-black md:px-20 ">
-          <h1 className="text-4xl font-semibold text-uRed font-chunk tracking-wider mb-4 lg:mb-6 ps-5" style={{
-            borderLeft: "6px solid #c33333"
-          }}>
+        <div className="w-full md:w-2/3 text-black md:px-20 ">
+          <h1
+            className="text-4xl font-semibold text-uRed font-chunk tracking-wider mb-4 lg:mb-6 ps-5"
+            style={{
+              borderLeft: "6px solid #c33333",
+            }}
+          >
             {" "}
-            Welcome to Uplifting Adult Day Care Center!
+            Fostering Friendship, Health, Happiness, and Connection
           </h1>
-          <p className=" text-xl font-montserrat text-slate-900 font-bold mb-4 lg:mb-6">
-            Located in the Heart of Inglewood, We're More Than Just a Day Care -
-            We're a Community!
-          </p>
+          <h2 className=" text-3xl font-montserrat text-[#44546A] font-bold mb-4 lg:mb-6">
+            Where Care and Community Come Together
+          </h2>
+          {/* <p className=" text-xl font-montserrat text-slate-900 font-bold mb-4 lg:mb-6">
+            Located in the Heart of Inglewood, We're More Than Just a Day Center
+            - We're a Community!
+          </p> */}
           <p className="text-slate-900 font-bold sm:text-sm lg:text-lg font-montserrat mb-8">
-            At Uplifting Adult Day Care Center, we believe every day should be
-            filled with joy, comfort, and connection. Whether you're seeking a
+            At Uplifting Adult Day Center, we believe every day should be filled
+            with joy, comfort, and connection. Whether you're seeking a
             supportive environment for yourself or a loved one, our center is
             here to provide a nurturing space where everyone can thrive.
           </p>

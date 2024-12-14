@@ -37,7 +37,7 @@ export default function MedicalServices() {
             We make sure to keep your loved ones healthy!
           </p>
           <p className="text-gray-700 mb-8 lg:text-lg">
-            At Uplifting Adult Day Center, our dedicated nursing staff provides
+            Our dedicated nursing staff provides
             a high level of Nursing services and support. We understand that each
             participant has unique healthcare needs, and we are committed to
             tailoring our services accordingly.

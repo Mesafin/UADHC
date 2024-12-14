@@ -6,7 +6,7 @@ const ServiceVideo = () => {
           Uplifting Your Life, One Day at a Time
         </h3>
         <p className="text-accent text-xl max-w-4xl text-center mx-auto">
-          At Uplifting Adult Day Center, we offer personalized services and
+          We offer personalized services and
           activities that nourish the mind, body, and spirit. Surrounded by the
           beauty of Inglewood, we help our participants rediscover their
           passions and connect with others in a supportive community. Every day

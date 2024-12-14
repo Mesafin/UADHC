@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import StripeProvider from "../../app/donate/StripeProvider";
-import DonationForm from "../../app/donate/DonationForm";
+import StripeProvider from "./donate/StripeProvider";
+import DonationForm from "./donate/DonationForm";
 
 const Donate = () => {
   const handlePaymentSuccess = (data) => {
