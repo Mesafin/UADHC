@@ -31,7 +31,7 @@ const Participants = () => {
           </p>
           <Link href="/contact">
           
-          <button className="mt-6 font-montserrat rounded-br-3xl bg-uRed py-2 px-6 border-white border-2 font-semibold hover:bg-red-700 hover:text-yellow-50 hover:border-red-100 transition">
+          <button type='button' className="mt-6 font-montserrat rounded-br-3xl bg-uRed py-2 px-6 border-white border-2 font-semibold hover:bg-red-700 hover:text-yellow-50 hover:border-red-100 transition">
             Contact Us <span className=''> →</span>
           </button>
           </Link>

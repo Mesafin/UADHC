@@ -38,7 +38,7 @@ export default function ContactUs() {
           text: "Thank you for contacting us! We will get back to you soon.",
           confirmButtonColor: "#3085d6",
         });
-        e.target.reset(); // Reset the form after successful submission
+        e.target.reset(); 
       } else {
         Swal.fire({
           icon: "error",

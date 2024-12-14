@@ -35,7 +35,7 @@ const Hero2 = () => {
         {/* Left Side (Text and Button) */}
         <div className="w-full md:w-2/3 text-black md:px-20 ">
           <h1
-            className="text-4xl font-semibold text-uRed font-chunk tracking-wider mb-4 lg:mb-6 ps-5"
+            className="md:text-4xl text-2xl font-semibold text-uRed font-chunk tracking-wider mb-4 lg:mb-6 ps-5"
             style={{
               borderLeft: "6px solid #c33333",
             }}

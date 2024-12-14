@@ -8,21 +8,21 @@ const EligibilityEnrollment = () => {
         <h2 className="text-3xl font-bold text-center font-montserrat mb-4">Uplifting Eligibility & Enrollment</h2>  
         
    
-    <div className="flex flex-col md:flex-row items-center mx-auto px-4 py-8 ">  
+    <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mx-auto px-4 py-8 ">  
       {/* Image Section */}  
-      <div className="flex-1 mb-6 md:mr-6">  
+      <div className="w-full md:w-1/2 mb-6 md:mr-6">  
         <Image  
           src="/eligibility.png" 
           alt="Uplifting Eligibility & Enrollment"  
           // layout="responsive"  
           width={500}
-          height={400} 
-          className="rounded-lg shadow-md object-cover"  
+          height={500} 
+          className="w-full rounded-lg shadow-md object-cover"  
         />  
       </div>  
       
       {/* Text Section */}  
-      <div className="flex-1 font-montserrat">  
+      <div className="w-full md:w-1/2 font-montserrat">  
 
         <div className="mb-6 md:mb-8">  
           <h3 className="text-2xl font-semibold font-montserrat mb-4">Eligibility</h3>  
