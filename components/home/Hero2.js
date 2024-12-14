@@ -51,7 +51,7 @@ const Hero2 = () => {
             - We're a Community!
           </p> */}
           <p className="text-slate-900 font-bold sm:text-sm lg:text-lg font-montserrat mb-8">
-            At Uplifting Adult Day Center, we believe every day should be filled
+            We believe every day should be filled
             with joy, comfort, and connection. Whether you're seeking a
             supportive environment for yourself or a loved one, our center is
             here to provide a nurturing space where everyone can thrive.

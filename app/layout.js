@@ -24,13 +24,34 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "UADHC",
-  description: "Uplifting Adult Day Care Center",
+  description: "Uplifting Adult Day Center",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, pageMetadata }) {
   return (
     <html lang="en">
       <head>
+        <meta name="title" content={pageMetadata?.title || metadata.title} />
+        <meta
+          name="description"
+          content={pageMetadata?.description || metadata.description}
+        />
+        <meta
+          name="keywords"
+          content={pageMetadata?.keywords || "default, keywords"}
+        />
+        <meta
+          property="og:title"
+          content={pageMetadata?.ogTitle || metadata.title}
+        />
+        <meta
+          property="og:description"
+          content={pageMetadata?.ogDescription || metadata.description}
+        />
+        <meta
+          property="og:image"
+          content={pageMetadata?.openGraph?.images[0]?.url || "/defaultImage.jpg"}
+        />
         <link
           href="https://fonts.cdnfonts.com/css/chunkfive"
           rel="stylesheet"
@@ -41,9 +62,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="icon" type="image/png" href="/favicon4.png" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Nav />
         <Navbar />
         {children}
