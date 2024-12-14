@@ -22,7 +22,7 @@ const ServiceVideo = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="Service Video"
+            title="uplifting adalt center Services Video"
           ></iframe>
         </div>
       </div>

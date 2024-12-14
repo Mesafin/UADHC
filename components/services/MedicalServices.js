@@ -11,14 +11,14 @@ export default function MedicalServices() {
         <div className="relative w-full md:w-1/2 pt-6 md:pt-20 md:mb-20">
           <Image
             src={doctorImage}
-            alt="Doctor with patient"
+            alt="uplifting adalt center Doctor with patient image"
             height={300}
             className="rounded-lg shadow-md w-full md:m-4 lg:max-w-[500px]"
           />
           <div className="absolute lg:top-80 lg:right-[0%]  hidden lg:block">
             <Image
               src={nurseImage}
-              alt="Nurse assisting patient"
+              alt="uplifting adalt center Nurse assisting patient image"
               height={400}
               className="rounded-lg border-[15px] border-white shadow-md"
               style={{

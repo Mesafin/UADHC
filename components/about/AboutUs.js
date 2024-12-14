@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
@@ -7,10 +8,13 @@ const AboutUs = () => {
         <div className=" px-6 md:px-8  text-accent2 font-montserrat">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <img
+              <Image
                 src="/about.png"
                 alt="uplifting About Us image"
                 className="rounded-lg w-full"
+                loading="lazy"
+                height={500}
+                width={400}
               />
             </div>
             <div className="md:w-1/2 md:pl-12">

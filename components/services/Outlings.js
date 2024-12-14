@@ -10,7 +10,7 @@ const Outlings = () => {
         <div className="flex justify-center h-auto">
             <Image
               src="/outling.png"
-              alt="Outings"
+              alt="Outings at uplifting day center"
               width={500}
               height={300}
               className="rounded-lg shadow-lg w-full"

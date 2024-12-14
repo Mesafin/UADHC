@@ -26,7 +26,7 @@ const Wellness = () => {
           </ul> 
           </div> 
           <div className="flex justify-center h-full w-full md:w-1/2">  
-            <Image src="/thriving.png" alt="Wellness" width={500} height={400} className="rounded-2xl shadow-lg w-full" />  
+            <Image src="/thriving.png" alt="Wellness image at uplifting adalt day center" width={500} height={400} className="rounded-2xl shadow-lg w-full" />  
           </div>  
         </div>  
         </div>

@@ -30,12 +30,12 @@ const PsychologicalSupport = () => {
       <div className="w-full md:w-1/3 relative mt-0 md:mt-6 py-8 md:py-12">
         <img
           src="/psychImage1.png"
-          alt="Elderly couple smiling"
+          alt="Elderly couple smiling at uplifting day center"
           className="w-full h-auto rounded-2xl shadow-lg"
         />
         <img
           src="/psychImage2.png"
-          alt="Celebration"
+          alt="Celebration at uplifting day center"
           className="absolute hidden md:block top-64 left-3 w-1/2 border-b-8 border-e-8 border-uRed rounded-2xl shadow-lg"
         />
       </div>

@@ -74,7 +74,7 @@ const Hero2 = () => {
                 <div key={index} className="slide">
                   <Image
                     src={slide}
-                    alt={`Image ${index + 1}`}
+                    alt={`Ulifting day center image ${index + 1}`}
                     // layout="fill"
                     // objectFit="cover"
                     className="rounded-lg"

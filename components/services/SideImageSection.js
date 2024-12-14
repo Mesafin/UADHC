@@ -30,7 +30,7 @@ export default function SideImageSection({
           </p>
         </div>
         <div className="lg:w-1/2 ">
-          <img src={imageSrc} alt={title} className=" w-full h-auto" />
+          <img src={imageSrc} alt="uplifting adalt center Therapeutic Care image" className=" w-full h-auto" />
         </div>
       </div>
     </div>

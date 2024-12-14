@@ -44,7 +44,7 @@ const ServicesSection = () => {
           <div className="relative ">
             <Image
               src={elderlyCare}
-              alt="Elderly care"
+              alt="Elderly care image at uplifting day center"
               width="auto"
               height={500}
               className="rounded-full text-center"

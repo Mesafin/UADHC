@@ -9,7 +9,7 @@ const Thriving = () => {
         <div className="container mx-auto px-8 flex flex-col-reverse md:flex-row items-center gap-8">  
            
           <div className=" w-full md:w-1/2">  
-            <Image src="/services-hero.png" alt="Thriving Community" height={300} width={500} className="rounded-2xl w-full" />  
+            <Image src="/services-hero.png" alt="Thriving Community at uplifting adalt day center" height={300} width={500} className="rounded-2xl w-full" />  
           </div> 
           <div className="w-full md:w-1/2 ">  
             <h2 className="text-3xl font-bold mb-4 border-l-8 border-uRed ps-4">Thriving Community</h2>  

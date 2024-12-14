@@ -1,4 +1,5 @@
 // components/Participants.js
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,10 +11,12 @@ const Participants = () => {
        
       <div className="flex flex-col md:flex-row items-center gap-8">
       <div className="md:w-2/5">
-          <img
+          <Image
             src="/participants.png"
             alt="uplifting Participants image"
             className=" w-full px-0 lg:px-4"
+            height={500}
+            width={500}
           />
         </div>
         <div className="md:w-3/5 mb-8 md:mb-0 text-white">

@@ -86,7 +86,7 @@ export default function ReviewSlider() {
           <Image
             src={reviewImage}
             height={100}
-            alt="google-review"
+            alt="google-review image of uplifting day center"
             className="mb-8 md:mb-0"
           />
         </div>

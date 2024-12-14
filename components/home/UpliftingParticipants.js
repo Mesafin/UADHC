@@ -15,7 +15,7 @@ const UpliftingParticipants = () => {
           <div className="rounded-lg overflow-hidden ">
             <Image
               src={participant2}
-              alt="Engaging Activity"
+              alt="Engaging Activity image at uplfiting day center"
               width={400}
               // height={300}
               className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"
@@ -24,7 +24,7 @@ const UpliftingParticipants = () => {
           <div className="rounded-lg overflow-hidden">
             <Image
               src={participant1}
-              alt="Social Connection"
+              alt="Social Connection image at uplifting day center"
               width={400}
               // height={300}
               className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"
@@ -33,7 +33,7 @@ const UpliftingParticipants = () => {
           <div className="rounded-lg overflow-hidden">
             <Image
               src={participant4}
-              alt="Community Offer"
+              alt="Community Offer image at uplfiting day center"
               width={400}
               // height={300}
               className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"
@@ -43,7 +43,7 @@ const UpliftingParticipants = () => {
           <div className="rounded-lg overflow-hidden">
             <Image
               src={participant3}
-              alt="Professional Care"
+              alt="Professional Care image at uplfiting day center"
               width={400}
               // height={300}
               className="rounded-lg h-full transition-transform duration-300 hover:scale-110 hover:brightness-75"

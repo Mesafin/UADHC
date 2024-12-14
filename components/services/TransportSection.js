@@ -19,7 +19,7 @@ const TransportSection = () => {
       <div className="flex-shrink-0 w-full md:w-2/5">
         <img
           src="/transpo.png" 
-          alt="Transportation Services"
+          alt="Transportation Services at uplifting day center"
           className="rounded-2xl object-cover w-full h-auto"
         />
       </div>
