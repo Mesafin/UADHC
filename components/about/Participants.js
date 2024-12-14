@@ -12,7 +12,7 @@ const Participants = () => {
       <div className="md:w-2/5">
           <img
             src="/participants.png"
-            alt="Participants"
+            alt="uplifting Participants image"
             className=" w-full px-0 lg:px-4"
           />
         </div>

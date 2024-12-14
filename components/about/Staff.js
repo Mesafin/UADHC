@@ -22,7 +22,7 @@ const Staff = () => {
             ) : (
               <img
                 src={staff.image}
-                alt={staff.name}
+                alt={`uplifting staff member ${staff.name} image`}
                 className="w-30 h-30 mx-auto mb-4 object-cover rounded-full"
               />
             )}

@@ -22,7 +22,7 @@ const Gallery = () => {
             <div className="relative overflow-hidden">  
               <Image  
                 src={src}  
-                alt={`Gallery image ${index + 1}`}  
+                alt={`uplifting day center Gallery image ${index + 1}`}  
                 width={450}  
                 height={300}  
                 className="object-cover w-full transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75" 

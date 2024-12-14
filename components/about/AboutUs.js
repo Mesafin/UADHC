@@ -9,7 +9,7 @@ const AboutUs = () => {
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img
                 src="/about.png"
-                alt="About Us"
+                alt="uplifting About Us image"
                 className="rounded-lg w-full"
               />
             </div>

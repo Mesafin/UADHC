@@ -93,7 +93,7 @@ const Mission = () => {
           <div className="md:w-1/2">
             <img
               src="/outling.png"
-              alt="Mission"
+              alt="uplifting day center Mission image"
               className="rounded-lg shadow-lg w-full max-h-80"
             />
           </div>

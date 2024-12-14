@@ -79,7 +79,7 @@ const ResourceCard = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 hover:underline text-blue-700 hover:text-blue-500 text-sm sm:text-base"
-                  style={{ wordBreak: 'break-word' }} // Allow wrapping of long URLs
+                  style={{ wordBreak: 'break-word' }} 
                 >
                   {resource.url}
                 </a>
