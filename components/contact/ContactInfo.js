@@ -28,7 +28,7 @@ export function ContactInfo() {
           <div className="flex justify-center items-center text-5xl mb-4">
             <IoIosMail />
           </div>
-          <p className="text-lg font-bold">filimon@uadhc.com</p>
+          <p className="text-lg font-bold">admin@uadhc.com</p>
         </div>
       </div>
     </section>

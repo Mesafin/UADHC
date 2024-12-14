@@ -8,9 +8,6 @@ const Nav = () => {
       <div className="container mx-auto p-4 header">
         <ul className="contact-info">
           <li className="contact_list">
-            {/* <div className="cta_icon">
-                          <p>Call us</p>
-                    </div>    */}
             <div className="cta_content">
               <span>
                 <i className="fa fa-phone"></i>
@@ -23,14 +20,10 @@ const Nav = () => {
           </li>
 
           <li className="contact_list">
-            {/* <div className="cta_icon">
-                      <p>Email Us</p>
-                    </div> */}
-
             <div className="cta_content">
               <span>
                 <i className="fa fa-envelope"></i>{" "}
-                <a href="mailto:filimon@uadhc.com">filimon@uadhc.com</a>
+                <a href="mailto:admin@uadhc.com">admin@uadhc.com</a>
               </span>
             </div>
           </li>
@@ -41,7 +34,6 @@ const Nav = () => {
             {/* <LanguageSelector /> */}
             <Language />
           </div>
-
           <ul className="social-links">
             <li>
               <a href="https://www.facebook.com/uadcla/" target="_blank">
@@ -58,11 +50,6 @@ const Nav = () => {
                 <i className="fab fa-linkedin"></i>
               </a>
             </li>
-            {/* <li>
-              <a href="#" target="_blank">
-                <i className="fab fa-twitter"></i>
-              </a>
-            </li> */}
 
             <li>
               <a

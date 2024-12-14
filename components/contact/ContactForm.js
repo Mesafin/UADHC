@@ -14,7 +14,7 @@ export function ContactForm({ form, sendEmail }) {
   };
 
   return (
-    <section className="py-12 ms-0 lg:ms-8 w-full lg:w-1/2 bg-gray-100 font-montserrat h-full">
+    <section className="py-12 ms-0 lg:ms-8 w-full lg:w-1/2 bg-gray-100 font-montserrat rounded-lg h-full">
       <div className="px-4 h-full flex flex-col justify-center">
         <div className="flex flex-col">
           <h2 className="text-2xl font-bold text-accent text-center mb-6">
