@@ -14,7 +14,7 @@ const EligibilityEnrollment = () => {
         <Image  
           src="/eligibility.png" 
           alt="Uplifting Eligibility & Enrollment"  
-          layout="responsive"  
+          // layout="responsive"  
           width={500}
           height={400} 
           className="rounded-lg shadow-md object-cover"  

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBriefcase, FaUsers, FaHeartbeat, FaHeartbeat as HeartIcon, FaFlask } from 'react-icons/fa';
+import { FaBriefcase, FaUsers, FaHeartbeat, FaFlask } from 'react-icons/fa';
 
 const resources = [
   {
@@ -66,19 +66,20 @@ const resources = [
 
 const ResourceCard = () => {
   return (
-    <div className="bg-white text-accent2  font-montserrat pt-8">
+    <div className="bg-white text-accent2 font-montserrat pt-8">
       <div className="container mx-auto py-8">
-        <div className=" grid gap-6 md:grid-cols-2 mx-auto md:mx-20">
+        <div className="grid gap-6 md:grid-cols-2 sm:grid-cols-1 mx-auto md:mx-20">
           {resources.map((resource, index) => (
-            <div key={index} className=" bg-gray-100 h-auto hover:bg-gray-200 shadow-md rounded-lg p-6 flex items-center">
+            <div key={index} className="bg-gray-100 h-auto hover:bg-gray-200 shadow-md rounded-lg p-3 md:p-6 flex items-center">
               <div className="mr-6">{resource.icon}</div>
-              <div className='border-l-4 border-uRed ps-6 w-full h-auto'>
-                <h2 className="text-lg font-semibold ">{resource.title}</h2>
+              <div className="border-l-4 border-uRed md:ps-6 ps-2 w-full h-auto">
+                <h2 className="text-lg font-semibold">{resource.title}</h2>
                 <a
                   href={resource.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 hover:underline text-blue-700 hover:text-blue-500 "
+                  className="inline-block mt-4 hover:underline text-blue-700 hover:text-blue-500 text-sm sm:text-base"
+                  style={{ wordBreak: 'break-word' }} // Allow wrapping of long URLs
                 >
                   {resource.url}
                 </a>

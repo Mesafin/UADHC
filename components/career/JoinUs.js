@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const JoinUs = () => {
@@ -8,10 +9,12 @@ const JoinUs = () => {
     <div className="flex flex-col-reverse md:flex-row items-center justify-between bg-white px-8 gap-8 my-16 md:my-20">
       {/* left Image Section */}
       <div className="flex-shrink-0 w-full md:w-2/5">
-        <img
+        <Image
           src="/career.png" 
           alt="career oportunieties at uplifting day center"
           className=" object-cover w-full h-auto"
+          width={500}
+          height={400}
         />
       </div>
       {/* right Text Section */}

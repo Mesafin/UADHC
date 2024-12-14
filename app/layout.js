@@ -10,6 +10,7 @@ import Nav from "@/components/layouts/Nav";
 import Navbar from "@/components/layouts/Navbar";
 import FooterLogo from "@/components/layouts/FooterLogo";
 import BackToTop from "@/components/layouts/BackToTop";
+import { layouts } from "chart.js";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,6 +26,19 @@ const geistMono = localFont({
 export const metadata = {
   title: "UADHC",
   description: "Uplifting Adult Day Center",
+  openGraph: {
+  url: "https://uadhc.com/",
+    type: "website",
+    images: [
+      {
+        url: "/slider-2.png", 
+        width: 1200,
+        height: 630,
+        alt: "Uplifting Adult Day Center image",
+        layout: "objectFit"
+      },
+    ],
+  }
 };
 
 export default function RootLayout({ children, pageMetadata }) {

@@ -75,8 +75,8 @@ const Hero2 = () => {
                   <Image
                     src={slide}
                     alt={`Image ${index + 1}`}
-                    layout="fill"
-                    objectFit="cover"
+                    // layout="fill"
+                    // objectFit="cover"
                     className="rounded-lg"
                   />
                 </div>

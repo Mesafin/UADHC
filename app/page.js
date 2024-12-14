@@ -45,6 +45,7 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: "Uplifting Adult Day Center home page image",
+        layout: "objectFit"
       },
     ],
   },
