@@ -2,7 +2,7 @@ import Hero2 from "@/components/home/Hero2";
 import ReviewSlider from "@/components/services/ReviewSlider";
 import ServicesSection from "@/components/home/ServicesSection";
 import UpliftingParticipants from "@/components/home/UpliftingParticipants";
-import NewsletterPage from "./newsletter/page";
+import NewsletterButton from "@/components/NewsletterButton";
 
 export const metadata = {
   title: "Home - Uplifting Adult Day Center",
@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <div className=" mx-auto ">
         <Hero2 />
-        {/* <NewsletterPage /> */}
+        <NewsletterButton />
         <UpliftingParticipants />
         <ServicesSection />
         <ReviewSlider />

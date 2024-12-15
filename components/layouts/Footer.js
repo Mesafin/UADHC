@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterButton from "../NewsletterButton";
 
 const Footer = () => {
   return (
@@ -85,15 +86,16 @@ const Footer = () => {
               Stay updated on our latest programs, services, and events that
               help seniors thrive in a community designed for their well-being.
             </p>
-            <div className="flex flex-col gap-6 ">
+            <div className="flex flex-col gap-6 mt-6 ">
+              <NewsletterButton />
               <Link href="/contact">
-                <button className="mt-8 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
+                <button className="mt-2 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
                   Contact Us
                 </button>
               </Link>
-              {/* <Link href="/appointment">
+              {/* <Link href="/newsletter">
                 <button className="mt-2 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
-                  Make an appointment
+                  Subscribe to our newsletter
                 </button>
               </Link> */}
               <div>

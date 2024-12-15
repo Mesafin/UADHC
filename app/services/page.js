@@ -1,4 +1,5 @@
 "use client";
+import NewsletterButton from "@/components/NewsletterButton";
 import BottomShape from "@/components/services/BottomShape";
 import MedicalServices from "@/components/services/MedicalServices";
 import Nourishing from "@/components/services/Nourshing";
@@ -77,6 +78,9 @@ export default function Services() {
       <div ref={nourshing}>
         <Nourishing />
       </div>
+      <section className="container mx-auto mt-10">
+          <NewsletterButton />
+        </section>
       <ReviewSlider />
     </>
   );
