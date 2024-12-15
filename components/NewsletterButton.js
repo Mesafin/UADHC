@@ -11,7 +11,7 @@ export default function NewsletterButton() {
       const timer = setTimeout(() => {
         setShowPopup(true);
         localStorage.setItem("hasSeenPopup", "true");
-      }, 5000); // Show after 5 seconds
+      }, 10000); // Show after 10 seconds
       return () => clearTimeout(timer);
     }
   }, []);
