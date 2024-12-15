@@ -2,6 +2,7 @@
 import nodemailer from "nodemailer";
 
 export async function POST(req) {
+  console.log(req.body);
   const { name, email, phone, services, message } = await req.json();
 
  const transporter = nodemailer.createTransport({
@@ -12,14 +13,14 @@ export async function POST(req) {
     user: process.env.GODADDY_EMAIL,
     pass: process.env.GODADDY_EMAIL_PASSWORD,
   },
-  logger: true,
-  debug: true,
+  // logger: true,
+  // debug: true,
 });
 
 
   const mailOptions = {
-    from: `"${name}" <mercyride24@gmail.com>`, // Sender's email (from form)
-    to: "filimon@uadhc.com", // Recipient email (your email)
+    from: `"${name}" <admin@uadhc.com>`,
+    to: "admin@uadhc.com",
     subject: `Contact form submission from ${name}`,
     text: `
       Name: ${name}
@@ -34,6 +35,7 @@ export async function POST(req) {
       <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Services:</strong> ${services}</p>
       <p><strong>Message:</strong> ${message}</p>
+      <p style="color: rgb(24, 24, 176); font-style: italic;">This message comes from the contact form on the website.</p>
     `,
   };
 

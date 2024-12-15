@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const UpliftingParticipants = () => {
   return (
-    <div className="container mx-auto pt-16 p-6 md:pb-12 md:mt-24 bg-white">
+    <div className="container mx-auto pt-12 p-6 md:pb-12 md:mt-20 bg-white">
       {/* Main Container */}
       <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-12">
         {/* Left Section - Images */}

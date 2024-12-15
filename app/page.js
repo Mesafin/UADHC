@@ -1,8 +1,8 @@
-
 import Hero2 from "@/components/home/Hero2";
 import ReviewSlider from "@/components/services/ReviewSlider";
 import ServicesSection from "@/components/home/ServicesSection";
 import UpliftingParticipants from "@/components/home/UpliftingParticipants";
+import NewsletterPage from "./newsletter/page";
 
 export const metadata = {
   title: "Home - Uplifting Adult Day Center",
@@ -30,22 +30,22 @@ export const metadata = {
     "senior wellness activities",
     "California adult day center",
   ],
-  ogTitle: "Home - Uplifting Adult Day Center",
+  ogTitle: "Uplifting Adult Day Center",
   ogDescription:
     "Uplifting Adult Day Center offers a place where seniors thrive through engaging activities, professional care, and a supportive community.",
   openGraph: {
-    title: "Home - Uplifting Adult Day Center",
+    title: "Uplifting Adult Day Center",
     description:
       "Join Uplifting Adult Day Center for a community that celebrates seniors through enriching activities, professional care, and social engagement.",
     url: "https://uadhc.com/",
     type: "website",
     images: [
       {
-        url: "/slider-4.png", 
+        url: "/slider-4.png",
         width: 1200,
         height: 630,
         alt: "Uplifting Adult Day Center home page image",
-        layout: "objectFit"
+        layout: "objectFit",
       },
     ],
   },
@@ -56,6 +56,7 @@ export default function Home() {
     <>
       <div className=" mx-auto ">
         <Hero2 />
+        {/* <NewsletterPage /> */}
         <UpliftingParticipants />
         <ServicesSection />
         <ReviewSlider />
