@@ -125,8 +125,8 @@ const Footer = () => {
                   <div className="flex items-center space-x-2 cursor-pointer hover:text-blue-400">
                    
                    <Link href="/login">
-                    <FaUserShield className="text-lg" />
-                    <span>Admin</span>
+                    <FaUserShield className="text-2xl" />
+                    {/* <span>Admin</span> */}
                    </Link>
 
 
