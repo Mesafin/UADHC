@@ -28,7 +28,7 @@ export default function SubscribersPage() {
   }, []);
 
   return (
-    <div className="p-8">
+    <div>
       <h1 className="text-3xl font-bold mb-4">Newsletter Subscribers</h1>
       {loading ? (
         <p>Loading...</p>
@@ -36,15 +36,19 @@ export default function SubscribersPage() {
         <table className="min-w-full table-auto border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
-              <th className="border border-gray-300 px-4 py-2">Name</th>
-              <th className="border border-gray-300 px-4 py-2">Email</th>
-              <th className="border border-gray-300 px-4 py-2">Date Subscribed</th>
+              <th className="border border-gray-300 px-4 py-2">#</th>
+              <th className="border text-start border-gray-300 px-4 py-2">Name</th>
+              <th className="border tex-start border-gray-300 px-4 py-2">Email</th>
+              <th className="border text-start border-gray-300 px-4 py-2">Date Subscribed</th>
             </tr>
           </thead>
           <tbody>
             {subscribers.length > 0 ? (
-              subscribers.map((subscriber) => (
+              subscribers.map((subscriber, index) => (
                 <tr key={subscriber.id} className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-2 text-center">
+                    {index + 1}
+                  </td>
                   <td className="border border-gray-300 px-4 py-2">{subscriber.name}</td>
                   <td className="border border-gray-300 px-4 py-2">{subscriber.email}</td>
                   <td className="border border-gray-300 px-4 py-2">
@@ -54,7 +58,7 @@ export default function SubscribersPage() {
               ))
             ) : (
               <tr>
-                <td colSpan="3" className="text-center py-4">
+                <td colSpan="4" className="text-center py-4">
                   No subscribers yet.
                 </td>
               </tr>

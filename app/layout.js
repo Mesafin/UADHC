@@ -10,7 +10,7 @@ import Nav from "@/components/layouts/Nav";
 import Navbar from "@/components/layouts/Navbar";
 import FooterLogo from "@/components/layouts/FooterLogo";
 import BackToTop from "@/components/layouts/BackToTop";
-import { layouts } from "chart.js";
+import { AuthProvider } from "@/components/auth/AuthProvider"; 
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,18 +27,18 @@ export const metadata = {
   title: "UADHC",
   description: "Uplifting Adult Day Center",
   openGraph: {
-  url: "https://uadhc.com/",
+    url: "https://uadhc.com/",
     type: "website",
     images: [
       {
-        url: "/slider-2.png", 
+        url: "/slider-2.png",
         width: 1200,
         height: 630,
         alt: "Uplifting Adult Day Center image",
-        layout: "objectFit"
+        layout: "objectFit",
       },
     ],
-  }
+  },
 };
 
 export default function RootLayout({ children, pageMetadata }) {
@@ -77,12 +77,14 @@ export default function RootLayout({ children, pageMetadata }) {
         <link rel="icon" type="image/png" href="/favicon4.png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Nav />
-        <Navbar />
-        {children}
-        <FooterLogo />
-        <Footer />
-        <BackToTop />
+        <AuthProvider> {/* Wrap the app with AuthProvider */}
+          <Nav />
+          <Navbar />
+          {children}
+          <FooterLogo />
+          <Footer />
+          <BackToTop />
+        </AuthProvider>
       </body>
     </html>
   );

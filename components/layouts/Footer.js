@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NewsletterButton from "../NewsletterButton";
+import { FaUserShield } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -42,7 +43,6 @@ const Footer = () => {
             </div>
           </div>
 
-
           <div>
             <h3 className="text-lg font-semibold mb-8 md:mb-10 tracking-wider">
               Useful Links
@@ -59,12 +59,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-              <a href="/resources" className="hover:text-red-500">
+                <a href="/resources" className="hover:text-red-500">
                   Resources
                 </a>
               </li>
               <li>
-             
                 <a href="/contact" className="hover:text-red-500">
                   Contact us
                 </a>
@@ -88,8 +87,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col gap-6 mt-6 ">
               <div className="-ms-4">
-                
-              <NewsletterButton />
+                <NewsletterButton />
               </div>
               <Link href="/contact">
                 <button className="mt-2 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
@@ -124,15 +122,25 @@ const Footer = () => {
                       <i className="fab fa-instagram text-2xl hover:text-uRed"></i>
                     </a>
                   </li>
+                  <div className="flex items-center space-x-2 cursor-pointer hover:text-blue-400">
+                   
+                   <Link href="/login">
+                    <FaUserShield className="text-lg" />
+                    <span>Admin</span>
+                   </Link>
+
+
+                  </div>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-          {/* All rights reserved */}
-          <div className="text-center mt-8">
+        {/* All rights reserved */}
+        <div className="text-center mt-8">
           <p className="font-light">
-            &copy; {new Date().getFullYear()} Uplifting Adult Day Center. All rights reserved.
+            &copy; {new Date().getFullYear()} Uplifting Adult Day Center. All
+            rights reserved.
           </p>
         </div>
       </footer>
