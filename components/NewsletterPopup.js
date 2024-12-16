@@ -10,7 +10,7 @@ const NewsletterPopup = ({ onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("/api/newsletter/subscribe", {
+      const res = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, name }),
@@ -33,12 +33,12 @@ const NewsletterPopup = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-1/2 relative">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-3/4 md:w-1/2 relative">
         
         {!submitted ? (
             <>
             <button
-          className="absolute top-6 text-2xl right-6 text-uRed hover:text-black"
+          className="absolute top-6 text-2xl right-4 md:right-6 text-uRed hover:text-black"
           onClick={onClose}
         >
           ✖
@@ -55,7 +55,7 @@ const NewsletterPopup = ({ onClose }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full border border-gray-300 p-2 rounded mb-4"
+              className="w-full border text-black border-gray-300 p-2 rounded mb-4"
             />
             <input
               type="email"
@@ -63,7 +63,7 @@ const NewsletterPopup = ({ onClose }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full border border-gray-300 p-2 rounded mb-4"
+              className="w-full border text-black border-gray-300 p-2 rounded mb-4"
             />
 
             <button
@@ -76,7 +76,7 @@ const NewsletterPopup = ({ onClose }) => {
           </>
         ) : (
           <div className="text-center font-montserrat">
-            <h2 className="text-xl font-bold mb-4">Thank you!</h2>
+            <h2 className="text-xl font-bold mb-4 text-accent2">Thank you!</h2>
             <p className="text-sm text-accent2">
               You have successfully subscribed to our newsletter.
             </p>

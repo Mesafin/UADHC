@@ -4,7 +4,7 @@ import NewsletterButton from "../NewsletterButton";
 const Footer = () => {
   return (
     <>
-      <footer className="text-white bg-footerBg md:p-10 p-5 pt-20 md:pt-24 font-chunk  ">
+      <footer className="text-white bg-footerBg md:p-10 p-5 pt-20 md:pt-24 font-montserrat  ">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-2 md:pe-6">
             {/* <h2 className="text-2xl font-bold mb-8">
@@ -87,7 +87,10 @@ const Footer = () => {
               help seniors thrive in a community designed for their well-being.
             </p>
             <div className="flex flex-col gap-6 mt-6 ">
+              <div className="-ms-4">
+                
               <NewsletterButton />
+              </div>
               <Link href="/contact">
                 <button className="mt-2 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
                   Contact Us

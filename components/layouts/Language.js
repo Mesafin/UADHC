@@ -4,7 +4,11 @@ import React, { useEffect, useRef, useState } from "react";
 const Language = ({ onLanguageChange }) => {
   const [language, setLanguage] = useState("en");
   const googleTranslateRef = useRef(null);
-  const allowedLanguages = ["en", "am", "ar", "fr", "ti", "om" , "aa", "so", "es", "zh", "sw"];
+  const allowedLanguages = [
+    "en", "am", "ar", "fr", "ti", "om", "aa", "so", 
+    "es", "sw", "ko", "zh-CN", "zh-TW", "ja"
+  ];
+  
 
 
   useEffect(() => {

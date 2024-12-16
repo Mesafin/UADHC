@@ -1,5 +1,4 @@
 "use client";
-import NewsletterButton from "@/components/NewsletterButton";
 import { useState } from "react";
 
 export default function NewsletterPage() {
@@ -42,7 +41,6 @@ export default function NewsletterPage() {
 
   return (
     <div className="container mx-auto py-8">
-      <NewsletterButton />
       <div className="newsletter-container bg-accent text-white tracking-wider font-chunk mt-20 p-8">
         <div className="newsletter-content text-center">
           <h2 className="tracking-wider text-4xl mb-4">

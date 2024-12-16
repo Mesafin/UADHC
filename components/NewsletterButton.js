@@ -1,29 +1,29 @@
 "use client";
 import NewsletterPopup from "@/components/NewsletterPopup";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function NewsletterButton() {
   const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const hasSeenPopup = localStorage.getItem("hasSeenPopup");
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => {
-        setShowPopup(true);
-        localStorage.setItem("hasSeenPopup", "true");
-      }, 10000); // Show after 10 seconds
-      return () => clearTimeout(timer);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const hasSeenPopup = localStorage.getItem("hasSeenPopup");
+  //   if (!hasSeenPopup) {
+  //     const timer = setTimeout(() => {
+  //       setShowPopup(true);
+  //       localStorage.setItem("hasSeenPopup", "true");
+  //     }, 10000); // Show after 10 seconds
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, []);
 
   return (
     <main className=" font-montserrat text-xl text-center">
-      <p className="my-8">Get the Latest Updates</p>
+      <p className="my-8 text-start md:text-center ms-4">Get the Latest Updates</p>
 
       <button
         type="button"
         onClick={() => setShowPopup(true)}
-        className="text-center items-center mx-auto flex border-2 rounded-lg border-uRed px-4 py-2 hover:bg-uRed hover:text-white"
+        className="text-center items-center mx-auto flex border-2 rounded-lg text-white border-uRed bg-uRed px-4 py-2 hover:bg-red-500"
       >
         <svg
     xmlns="http://www.w3.org/2000/svg"
