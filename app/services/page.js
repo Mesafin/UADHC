@@ -25,7 +25,7 @@ export default function Services() {
   const nourshing = useRef(null);
 
   const scrollToSection = (sectionRef) => {
-    const offset = 80; 
+    const offset = 80;
     if (sectionRef.current) {
       const elementPosition = sectionRef.current.offsetTop;
       window.scrollTo({
@@ -34,7 +34,6 @@ export default function Services() {
       });
     }
   };
-  
 
   return (
     <>
@@ -43,7 +42,7 @@ export default function Services() {
         sectionRefs={{ nursing, therapy, outlings, recreational, nourshing }}
       />
       <ServiceVideo />
-      <div ref={nursing} >
+      <div ref={nursing}>
         <MedicalServices />
       </div>
       <Shapes />
@@ -78,9 +77,9 @@ export default function Services() {
       <div ref={nourshing}>
         <Nourishing />
       </div>
-      <section className="container mx-auto mt-10">
-          <NewsletterButton />
-        </section>
+      <div className="container mx-auto mt-4 md:mt-10  flex flex-col items-center">
+          <NewsletterButton text="Subscribe to Our Newsletter" style="text-center" />
+        </div>
       <ReviewSlider />
     </>
   );

@@ -85,12 +85,12 @@ const Footer = () => {
               Stay updated on our latest programs, services, and events that
               help seniors thrive in a community designed for their well-being.
             </p>
-            <div className="flex flex-col gap-6 mt-6 ">
-              <div className="-ms-4">
-                <NewsletterButton />
+            <div className="flex flex-col gap-3 mt-6 ">
+              <div className="">
+                <NewsletterButton text="subscribe" />
               </div>
               <Link href="/contact">
-                <button className="mt-2 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded">
+                <button className="my-4 bg-uRed hover:bg-red-500 text-white py-2 px-4 rounded-lg">
                   Contact Us
                 </button>
               </Link>

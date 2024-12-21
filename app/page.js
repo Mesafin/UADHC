@@ -54,9 +54,11 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className=" mx-auto ">
+      <div className=" mx-auto">
         <Hero2 />
-        <NewsletterButton />
+        <div className="container mx-auto mt-4 md:mt-10  flex flex-col items-center">
+          <NewsletterButton text="Subscribe to Our Newsletter" style="text-center" />
+        </div>
         <UpliftingParticipants />
         <ServicesSection />
         <ReviewSlider />

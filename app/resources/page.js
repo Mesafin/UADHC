@@ -8,7 +8,9 @@ const page = () => {
     <>
       <ResourceHero />
       <ResourceCard />
-      <NewsletterButton />
+      <div className="container mx-auto mt-4 md:mt-10  flex flex-col items-center">
+          <NewsletterButton text="Subscribe to Our Newsletter" style="text-center" />
+        </div>
       <EligibilityEnrollment />
     </>
   );
