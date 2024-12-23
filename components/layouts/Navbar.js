@@ -86,7 +86,7 @@ const Navbar = () => {
           {/* Buttons */}
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 pt-5 lg:space-x-4 px-6 lg:px-0 mt-4 lg:mt-0">
             <div className=" bg-gray-800 font-montserrat font-semibold text-sm text-white px-4 py-2 rounded-full hover:bg-gray-700 w-fit">
-              <a href="tel:+1-626-232-1582" className="phone "> Call Us {"    "}
+              <a href="tel:+1-213-809-4306" className="phone "> Call Us {"    "}
               213-809-4306{" "}
               </a>
             </div>
