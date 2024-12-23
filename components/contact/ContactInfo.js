@@ -20,7 +20,7 @@ export function ContactInfo() {
           <div className="flex justify-center items-center text-5xl mb-4">
             <FaPhoneAlt />
           </div>
-          <p className="text-lg font-bold">+1 (213) 809 4306</p>
+          <p className="text-lg font-bold">213-809-4306</p>
         </div>
 
         {/* Email */}

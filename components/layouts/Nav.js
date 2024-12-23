@@ -13,7 +13,7 @@ const Nav = () => {
                 <i className="fa fa-phone"></i>
                 <a href="tel:+1-626-232-1582" className="phone">
                   {" "}
-                   +1-213-809-4306{" "}
+                   213-809-4306{" "}
                 </a>
               </span>
             </div>
