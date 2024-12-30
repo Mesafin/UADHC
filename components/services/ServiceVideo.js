@@ -23,6 +23,7 @@ const ServiceVideo = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="uplifting adalt center Services Video"
+            referrerPolicy="no-referrer"
           ></iframe>
         </div>
       </div>

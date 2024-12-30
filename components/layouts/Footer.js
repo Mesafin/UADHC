@@ -122,15 +122,12 @@ const Footer = () => {
                       <i className="fab fa-instagram text-2xl hover:text-uRed"></i>
                     </a>
                   </li>
-                  <div className="flex items-center space-x-2 cursor-pointer hover:text-blue-400">
-                   
-                   <Link href="/login">
-                    <FaUserShield className="text-2xl" />
-                    {/* <span>Admin</span> */}
-                   </Link>
-
-
-                  </div>
+                  <li className="flex items-center space-x-2 cursor-pointer hover:text-blue-400">
+                    <Link href="/login">
+                      <FaUserShield className="text-2xl" />
+                      {/* <span>Admin</span> */}
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
