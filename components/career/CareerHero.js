@@ -9,11 +9,11 @@ const CareerHero = () => {
       }}
     >
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-white bg-opacity-80"></div>
+      {/* <div className="absolute inset-0 bg-white bg-opacity-80"></div> */}
 
       {/* Text Content */}
       <h2 
-        className="relative text-center text-2xl md:text-5xl text-gray-700 font-bold"
+        className="relative text-center text-2xl md:text-4xl text-black font-bold md:pt-32 "
       >
         Career Opportunities
       </h2>

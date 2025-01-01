@@ -77,7 +77,7 @@ export default function RootLayout({ children, pageMetadata }) {
         <link rel="icon" type="image/png" href="/favicon4.png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <AuthProvider> {/* Wrap the app with AuthProvider */}
+        <AuthProvider> 
           <Nav />
           <Navbar />
           {children}
