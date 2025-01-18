@@ -28,11 +28,11 @@ const ServiceVideo = () => {
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
             src="https://www.youtube.com/embed/43pZaD_Fdyw?si=Ho-OPaq35XJ8Iy4T"
-            title="YouTube video player"
-            // frameborder="0"
+            title="uplifting adult day center services"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="no-referrer"
+            allowFullScreen
           ></iframe>
         </div>
       </div>
