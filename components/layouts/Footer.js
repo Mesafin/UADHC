@@ -22,17 +22,27 @@ const Footer = () => {
               cultural heritage and personal needs.
             </p>
 
-            <div className="flex gap-4 mb-2 font-light ">
-              <div className="flex justify-center text-uRed text-4xl">
-                <i className="fas fa-map-marker-alt"></i>
-              </div>
-              <p>
-                <strong>
-                  Inglewood,
-                  <br />
-                  California
-                </strong>
-              </p>
+     
+
+            <div className="flex gap-4 mb-2 font-light">
+              <a
+                href="https://www.bing.com/maps/search?ty=18&v=2&sV=1&FORM=MIRE&style=r&q=5757+W+Century+Blvd%2C+Playa+Vista%2C+CA+90045%2C+United+States&ppois=33.946055_-118.382669_5757+W+Century+Blvd%2C+Playa+Vista%2C+CA+90045%2C+United+States_%7E&cp=33.946055%7E-118.382669&lvl=16"
+                target="_blank"
+                className="flex gap-4 items-start"
+              >
+                <div className="text-uRed text-4xl">
+                  <i className="fas fa-map-marker-alt"></i>
+                </div>
+                <p className="font-light">
+                  <strong>
+                    5757 W Century Blvd,
+                    <br />
+                    Playa Vista, CA 90045,
+                    <br />
+                    United States
+                  </strong>
+                </p>
+              </a>
             </div>
 
             <div className="flex gap-4 font-light">

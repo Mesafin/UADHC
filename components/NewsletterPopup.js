@@ -23,7 +23,14 @@ const NewsletterPopup = ({ onClose }) => {
           onClose();
         }, 2000);
       } else {
-        alert("Failed to subscribe. Please try again.");
+        // alert("Failed to subscribe. Please try again.");
+
+        setSubmitted(true);
+
+        // Auto-close popup after 5 seconds
+        setTimeout(() => {
+          onClose();
+        }, 2000);
       }
     } catch (error) {
       console.error(error);

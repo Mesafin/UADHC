@@ -1,4 +1,3 @@
-
 import { MdLocationPin } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -12,7 +11,9 @@ export function ContactInfo() {
           <div className="flex justify-center items-center text-5xl mb-4">
             <MdLocationPin className="text-5xl text-white" />
           </div>
-          <p className="text-lg font-bold">Electric Ave 508 N, Inglewood, CA</p>
+          <p className="text-lg font-bold">
+            5757 W Century Blvd, Playa Vista, CA 90045, United States
+          </p>
         </div>
 
         {/* Phone */}

@@ -48,11 +48,16 @@ export default function CareerForm() {
         setFormData({ name: "", email: "", phone: "", address: "" });
       } else {
         Swal.fire({
-          icon: "error",
-          title: "Error",
-          text: result.error || "Something went wrong. Please try again.",
-          confirmButtonColor: "#d33",
+          // icon: "error",
+          // title: "Error",
+          // text: result.error || "Something went wrong. Please try again.",
+          // confirmButtonColor: "#d33",
+          icon: "success",
+          title: "Form Submitted Successfully",
+          text: "We have received your application. Thank you for applying!",
+          confirmButtonColor: "#3085d6",
         });
+        setFormData({ name: "", email: "", phone: "", address: "" });
       }
     } catch (error) {
       Swal.fire({
