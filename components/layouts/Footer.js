@@ -37,7 +37,7 @@ const Footer = () => {
                   <strong>
                     5757 W Century Blvd,
                     <br />
-                    Playa Vista, CA 90045,
+                    Los Angeles, CA 90045,
                     <br />
                     United States
                   </strong>

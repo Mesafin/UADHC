@@ -12,7 +12,7 @@ export function ContactInfo() {
             <MdLocationPin className="text-5xl text-white" />
           </div>
           <p className="text-lg font-bold">
-            5757 W Century Blvd, Playa Vista, CA 90045, United States
+            5757 W Century Blvd, Los Angeles, CA 90045, United States
           </p>
         </div>
 
